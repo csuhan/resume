@@ -459,6 +459,9 @@ blockquote p {
 .page article h3 {
   font-size: 2.6rem;
 }
+.page article h2 .headerlink {
+  text-decoration: none;
+}
 .page article p,
 .page article li {
   font-size: 1.8rem;
