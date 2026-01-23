@@ -1,11 +1,41 @@
+:root {
+  --color-primary: #c62641;
+  --color-secondary: #7a8288;
+  --color-text: #494e52;
+  --color-code-text: #525252;
+  --color-bg: #fff;
+  --color-code-bg: #f8f8f8;
+  --color-selection-bg: rgba(128,203,196,0.251);
+  --spacing-base: 1.6rem;
+  --spacing-section: 2rem;
+  --spacing-code: 10px 20px;
+  --breakpoint-sm: 34em;
+  --breakpoint-lg: 66.67em;
+  --font-size-base: 1.6rem;
+  --font-size-code: 1.6rem;
+  --transition-fast: all 0.2s ease-in-out;
+  --transition-slow: all 0.3s ease;
+}
+
+/* Utility classes for transitions */
+.transition-fast {
+  transition: var(--transition-fast);
+  -webkit-transition: var(--transition-fast);
+}
+
+.transition-slow {
+  transition: var(--transition-slow);
+  -webkit-transition: var(--transition-slow);
+}
+
 .page pre,
 .page .highlight {
   overflow: auto;
-  margin: 0 0 1rem;
+  margin: 0 0 var(--spacing-base);
   padding: 0;
-  background: #f8f8f8;
-  color: #525252;
-  font-size: 1.6rem;
+  background: var(--color-code-bg);
+  color: var(--color-code-text);
+  font-size: var(--font-size-code);
   clear: both;
 }
 figure.highlight {
@@ -14,7 +44,7 @@ figure.highlight {
 .page .highlight code {
   padding: 0.2rem 0.3rem;
   word-wrap: break-word;
-  font-size: 1.6rem !important;
+  font-size: var(--font-size-code) !important;
 }
 .page pre {
   padding: 10px 20px;
@@ -22,7 +52,7 @@ figure.highlight {
 .page pre code {
   padding: 0;
   background: none;
-  color: #525252;
+  color: var(--color-code-text);
   text-shadow: none;
 }
 .page .highlight {
@@ -35,11 +65,11 @@ figure.highlight {
   border: none;
 }
 .page .highlight .line::selection {
-  background: rgba(128,203,196,0.251);
-  color: #525252;
+  background: var(--color-selection-bg);
+  color: var(--color-code-text);
 }
 .page .highlight .line.marked {
-  background-color: rgba(128,203,196,0.251);
+  background-color: var(--color-selection-bg);
 }
 .page .highlight table {
   position: relative;
