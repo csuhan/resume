@@ -1,664 +1,621 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>Jiaming Han</title><meta name="author" content="Jiaming Han"><link rel="shortcut icon" href="/img/logo_ico.png"><link rel="stylesheet" href="/css/index.min.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_2665463_g8w4nzjorug.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><meta name="generator" content="Hexo 5.4.2"></head><body><header id="page_header"><div class="header_wrap"><div id="blog_name"><a class="blog_title" id="site-name" href="/">Jiaming Han</a></div><button class="menus_icon" aria-label="Toggle menu"><div class="navicon"></div></button><ul class="menus_items"><li class="menus_item"><a class="site-page" href="/#Biography"> Biography</a></li><li class="menus_item"><a class="site-page" href="/#News"> News</a></li><li class="menus_item"><a class="site-page" href="/#Publications"> Publications</a></li><li class="menus_item"><a class="site-page" href="/#Experience"> Experience</a></li><li class="menus_item"><a class="site-page" href="/#Activities"> Activities</a></li><li class="menus_item"><a class="site-page" href="/#Educations"> Educations</a></li></ul></div></header><main id="page_main"><div class="side-card sticky"><div class="card-wrap" itemscope itemtype="http://schema.org/Person"><div class="author-avatar"><img class="avatar-img" src="/img/photo.jpg" onerror="this.onerror=null;this.src='/img/profile.png'" alt="avatar"></div><div class="author-discrip"><h3>Jiaming Han</h3><p class="author-bio">be simple, be happy</p></div><div class="author-links"><button class="btn m-social-links">Links</button><ul class="social-icons"><li><a class="social-icon" href="https://github.com/csuhan" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li><li><a class="social-icon" href="mailto:hanjiaming@link.cuhk.edu.hk" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li><li><a class="social-icon" href="https://twitter.com/csu_han" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li><li><a class="social-icon" href="https://www.zhihu.com/people/csuhanjiaming" target="_blank"><i class="fab fa-zhihu" aria-hidden="true"></i></a></li></ul><ul class="social-links"><li><a class="e-social-link" href="https://scholar.google.com/citations?hl=en&amp;user=vgcxKEcAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span>Google Scholar</span></a></li><li><a class="e-social-link" href="https://github.com/csuhan" target="_blank"><i class="fab fa-github" aria-hidden="true"></i><span>Github</span></a></li></ul></div><a class="cv-links" href="/attaches/CV_Jiaming-Han.pdf" target="_blank"><i class="fas fa-file-pdf" aria-hidden="true"><span>Curriculum Vitae</span></i></a></div></div><main class="page" itemscope itemtype="http://schema.org/CreativeWork"><article><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<style>
-    h3>a{text-decoration:none;}
-    h3 {
-      margin-bottom: -0.2em;
-    }
-    .badge {
-      display: inline-block;
-      padding: 0.2em 0.6em 0.3em;
-      font-size: 75%;
-      font-weight: 600;
-      line-height: 1;
-      text-align: center;
-      white-space: nowrap;
-      vertical-align: baseline;
-      border-radius: 0.25em;
-      margin-right: 0.5em;
-      text-decoration: none;
-      background-color: transparent;
-      border: 1px solid;
-    }
-    .badge i {
-      margin-right: 0.25em;
-    }
-    .badge-project,
-    .badge-paper,
-    .badge-code,
-    .badge-demo,
-    .badge-conference {
-      border: 1px solid #e9ecef;
-      /* background-color:rgb(243, 243, 243); */
-      font-style: normal;
-    }
-    .badge-conference {
-      color:rgb(10, 11, 11);
-    }
-    .publication-list {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-    .publication-block {
-      background-color: #ffffff;
-      border-radius: 8px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      border: 0.5px solid #e9ecef;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .publication-block:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-    .publication-title {
-      font-size: 1.8rem;
-      font-weight: 600;
-      margin-bottom: 0.75rem;
-      line-height: 1.4;
-      color:rgb(10, 11, 11);
-    }
-    .publication-authors {
-      font-size: 1.6rem;
-      margin-bottom: 0.75rem;
-      line-height: 1.5;
-      color: #495057;
-    }
-    .publication-links {
-      margin-top: 0.75rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-    .highlight-name {
-      font-weight: 600;
-    }
-    /* Modern Timeline Component Styles with Logos */
-    .timeline {
-      position: relative;
-      max-width: 100%;
-      margin: 2rem 0;
-    }
-    
-    .timeline::before {
-      content: '';
-      position: absolute;
-      width: 3px;
-      background: linear-gradient(to bottom, #f1f3f5, #dee2e6);
-      top: 0;
-      bottom: 0;
-      left: 3.5rem;
-      z-index: 0;
-    }
-    
-    .timeline-item {
-      position: relative;
-      margin-bottom: 2rem;
-      display: flex;
-      align-items: flex-start;
-    }
-    
-    .timeline-logo {
-      width: 5rem;
-      height: 5rem;
-      border-radius: 8px;
-      overflow: hidden;
-      background-color: white;
-      border: 2px solid #e9ecef;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-      z-index: 1;
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .timeline-logo img {
-      max-width: 85%;
-      max-height: 85%;
-      object-fit: contain;
-    }
-    
-    .timeline-content {
-      background-color: white;
-      border-radius: 12px;
-      padding: 1.5rem 2rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      border: 1px solid #f1f3f5;
-      transition: all 0.3s ease;
-      position: relative;
-      overflow: hidden;
-      margin-left: 1.5rem;
-      flex: 1;
-    }
-    
-    .timeline-content:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 24px rgba(96, 92, 92, 0.08);
-    }
-    
-    .timeline-date {
-      font-size: 1.5rem;
-      font-weight: 500;
-      color: #868e96;
-      margin-bottom: 0.75rem;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-    }
-    
-    .timeline-title {
-      font-size: 1.8rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      color: #212529;
-      line-height: 1.4;
-    }
-    
-    .timeline-description {
-      font-size: 1.5rem!important;
-      color: #495057;
-      line-height: 1.6;
-      margin: 0;
-    }
-    
-    /* News Slider Styles */
-    .news-container {
-      position: relative;
-    }
-    
-    .news-slider {
-      max-height: 210px; /* 大约10行内容的高度 */
-      overflow-y: auto;
-      padding-right: 10px;
-      scroll-behavior: smooth;
-      /* 隐藏滚动条但保持滚动功能 */
-      scrollbar-width: none; /* Firefox */
-      -ms-overflow-style: none; /* IE and Edge */
-    }
-    
-    /* Chrome, Safari and Opera */
-    .news-slider::-webkit-scrollbar {
-      width: 0;
-      height: 0;
-    }
-    
-    /* 悬停时显示滚动条 */
-    .news-slider:hover::-webkit-scrollbar {
-      width: 6px;
-    }
-    
-    .news-slider:hover::-webkit-scrollbar-track {
-      background: transparent;
-    }
-    
-    .news-slider:hover::-webkit-scrollbar-thumb {
-      background: #adb5bd;
-      border-radius: 4px;
-    }
-    
-    .news-slider:hover::-webkit-scrollbar-thumb:hover {
-      background: #868e96;
-    }
-    
-    .scroll-indicator {
-      text-align: center;
-      padding: 5px 0;
-      font-size: 0.85rem;
-      color: #868e96;
-      font-style: italic;
-    }
-    
-    .publication-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    
-    .publication-block {
-      display: flex;
-      gap: 20px;
-      background: #fff;
-      border-radius: 8px;
-      padding: 16px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      transition: all 0.3s ease;
-    }
-    
-    .publication-block:hover {
-      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-    }
-    
-    .publication-image {
-      flex-shrink: 0;
-      width: 240px;
-      height: 135px; /* 16:9比例 */
-      border-radius: 6px;
-      overflow: hidden;
-      background: #f8f9fa;
-    }
-    
-    .publication-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      transition: transform 0.3s ease;
-    }
-    
-    .publication-block:hover .publication-image img {
-      transform: scale(1.05);
-    }
-    
-    .publication-content {
-      flex: 1;
-      min-width: 0;
-    }
-    
-    @media (max-width: 768px) {
-      .publication-block {
-        flex-direction: column;
-      }
-      
-      .publication-image {
-        width: 100%;
-        height: auto;
-        padding-bottom: 56.25%; /* 16:9比例的另一种表示方法 */
-        position: relative;
-      }
-      
-      .publication-image img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        object-fit: contain;
-      }
-    }
-  
-</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <title>Jiaming Han</title>
+  <meta name="author" content="Jiaming Han">
+  <link rel="shortcut icon" href="/img/logo_ico.png">
+  <link rel="stylesheet" href="/css/index.min.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="generator" content="Hexo 5.4.2">
+</head>
+
+<body>
+  <header id="page_header">
+    <div class="header_wrap">
+      <div id="blog_name"><a class="blog_title" id="site-name" href="/">Jiaming Han</a></div><button class="menus_icon"
+        aria-label="Toggle menu">
+        <div class="navicon"></div>
+      </button>
+      <ul class="menus_items">
+        <li class="menus_item"><a class="site-page" href="/#Biography"> Biography</a></li>
+        <li class="menus_item"><a class="site-page" href="/#News"> News</a></li>
+        <li class="menus_item"><a class="site-page" href="/#Publications"> Publications</a></li>
+        <li class="menus_item"><a class="site-page" href="/#Experience"> Experience</a></li>
+        <li class="menus_item"><a class="site-page" href="/#Activities"> Activities</a></li>
+        <li class="menus_item"><a class="site-page" href="/#Educations"> Educations</a></li>
+      </ul>
+    </div>
+  </header>
+  <main id="page_main">
+    <div class="side-card sticky">
+      <div class="card-wrap" itemscope itemtype="http://schema.org/Person">
+        <div class="author-avatar"><img class="avatar-img" src="/img/photo.jpg" data-fallback-src="/img/profile.png"
+            alt="avatar"></div>
+        <div class="author-discrip">
+          <h3>Jiaming Han</h3>
+          <p class="author-bio">be simple, be happy</p>
+        </div>
+        <div class="author-links"><button class="btn m-social-links">Links</button>
+          <ul class="social-icons">
+            <li><a class="social-icon" href="https://github.com/csuhan" target="_blank" rel="noopener"
+                aria-label="Github"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+            <li><a class="social-icon" href="mailto:hanjiaming@link.cuhk.edu.hk" aria-label="Email"><i
+                  class="fas fa-envelope" aria-hidden="true"></i></a></li>
+            <li><a class="social-icon" href="/attaches/wechat_qrcode.png" target="_blank" rel="noopener"
+                aria-label="WeChat"><i class="fab fa-weixin" aria-hidden="true"></i></a></li>
+            <li><a class="social-icon" href="https://twitter.com/csu_han" target="_blank" rel="noopener"
+                aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a class="social-icon" href="https://www.xiaohongshu.com/search_result?keyword=Jiaming%20Han"
+                target="_blank" rel="noopener" aria-label="Xiaohongshu">
+                <img class="social-icon-img" src="/img/svg/xiaohongshuzhanghao.svg" alt="Xiaohongshu">
+              </a></li>
+            <li><a class="social-icon" href="https://www.zhihu.com/people/csuhanjiaming" target="_blank" rel="noopener"
+                aria-label="Zhihu"><i class="fab fa-zhihu" aria-hidden="true"></i></a></li>
+            <li><a class="social-icon" href="https://huggingface.co/csuhan" target="_blank" rel="noopener"
+                aria-label="Hugging Face">
+                <img class="social-icon-img" src="/img/svg/line-huggingface.svg" alt="Hugging Face">
+              </a></li>
+            <li><a class="social-icon"
+                href="https://scholar.google.com/citations?hl=en&amp;user=vgcxKEcAAAAJ&amp;view_op=list_works&amp;sortby=pubdate"
+                target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fas fa-graduation-cap"
+                  aria-hidden="true"></i></a></li>
+          </ul>
+        </div><a class="cv-links" href="/attaches/CV_Jiaming-Han.pdf" target="_blank"><i class="fas fa-file-pdf"
+            aria-hidden="true"><span>Curriculum Vitae</span></i></a>
+      </div>
+    </div>
+    <main class="page" itemscope itemtype="http://schema.org/CreativeWork">
+      <article>
+        <section class="bio-intro" aria-label="Profile">
+          <div class="bio-name">Jiaming Han</div>
+          <div class="bio-meta">
+            <span class="bio-role">PhD Student</span>
+            <span class="bio-sep">·</span>
+            <span class="bio-affiliation">MMLab, The Chinese University of Hong Kong</span>
+          </div>
+          <div class="bio-links" aria-label="Links">
+            <a class="badge bio-link" target="_blank" rel="noopener"
+              href="https://scholar.google.com/citations?hl=en&amp;user=vgcxKEcAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">
+              <i class="fas fa-graduation-cap" aria-hidden="true"></i>Google Scholar
+            </a>
+            <a class="badge bio-link" target="_blank" rel="noopener" href="https://github.com/csuhan">
+              <i class="fab fa-github" aria-hidden="true"></i>Github
+            </a>
+            <a class="badge bio-link" href="mailto:hanjiaming@link.cuhk.edu.hk">
+              <i class="fas fa-envelope" aria-hidden="true"></i>Email
+            </a>
+            <a class="badge bio-link" target="_blank" rel="noopener" href="/attaches/wechat_qrcode.png">
+              <i class="fab fa-weixin" aria-hidden="true"></i>WeChat
+            </a>
+            <a class="badge bio-link" target="_blank" rel="noopener" href="https://twitter.com/csu_han">
+              <i class="fab fa-twitter" aria-hidden="true"></i>Twitter
+            </a>
+          </div>
+        </section>
+        <h3 id="Biography"><a href="#Biography" class="headerlink" title="Biography"></a><a
+            href="#Biography">Biography</a></h3>
+        <p>I am a third-year PhD student of <a target="_blank" rel="noopener" href="http://mmlab.ie.cuhk.edu.hk/">MMLab</a>@<a
+            target="_blank" rel="noopener" href="https://cuhk.edu.hk/english/index.html">CUHK</a> advised by Prof. <a
+            target="_blank" rel="noopener" href="https://xyue.io/">Xiangyu Yue</a>. Before that, I received my Master and Bachelor degree from Wuhan University and Central South University, respectively. I also interned at <a
+            target="_blank" rel="noopener" href="https://seed.bytedance.com/en">Bytedance Seed</a>, <a target="_blank"
+            rel="noopener" href="https://www.shlab.org.cn/">Shanghai AI Lab</a> and <a target="_blank" rel="noopener"
+            href="https://open.youtu.qq.com/#/open">Tencent YouTu Lab</a>.</p>
+            <p>I have board interest in computer vision, natural language processing and deep learning. 
+              Recently, I focus on the unification of vision and language in one autoregressive model, such as multimodal LLMs, unified multimodal models and autoregressive generative models.</p>
+              
+            <p class="job-highlight"><strong>I expect to graduate in Summer 2027 and am actively seeking full-time opportunities. Feel free to contact me via
+                Email<a class="job-contact-icon" href="mailto:hanjiaming@link.cuhk.edu.hk" aria-label="Email"
+                  title="Email: hanjiaming@link.cuhk.edu.hk"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                and Wechat<a class="job-contact-icon" href="/attaches/wechat_qrcode.png" target="_blank" rel="noopener"
+                  aria-label="WeChat" title="WeChat: jiaming-han"><i class="fab fa-weixin" aria-hidden="true"></i></a>.
+              </strong></p>
+
+        <h3 id="Selected-Publications"><a href="#Selected-Publications" class="headerlink"
+            title="Selected Publications"></a><a href="#Publications">Selected Publications</a></h3>
+        <p />
+        <div class="publication-list">
+          <div class="publication-block">
+            <div class="publication-image">
+              <img src="/img/papers/bitdance.png" alt="BitDance: Scaling Autoregressive Generative Models with Binary Tokens">
+            </div>
+            <div class="publication-content">
+              <div class="publication-title">BitDance: Scaling Autoregressive Generative Models with Binary Tokens</div>
+              <div class="publication-authors">
+                Yuang Ai*, <span class="highlight-name">Jiaming Han</span>*, Shaobin
+                Zhuang*, Weijia Mao, Xuefeng Hu, Ziyan Yang,
+                Zhenheng Yang, Huaibo Huang, Xiangyu Yue, Hao Chen
+              </div>
+              <div class="publication-links">
+                <a target="_blank" rel="noopener" href="https://bitdance.csuhan.com/" class="badge badge-project"><i
+                    class="fas fa-globe"></i>Project Page</a>
+                <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2602.14041" class="badge badge-paper"><i
+                    class="fas fa-file-alt"></i>Paper</a>
+                <a target="_blank" rel="noopener" href="https://huggingface.co/collections/shallowdream204/bitdance"
+                  class="badge badge-paper"><i class="fas fa-cube"></i>Models</a>
+                <a target="_blank" rel="noopener" href="https://huggingface.co/spaces/shallowdream204/BitDance-14B-64x"
+                  class="badge badge-demo"><i class="fas fa-play"></i>Demo</a>
+              </div>
+            </div>
+          </div>
+          <div class="publication-block">
+            <div class="publication-image">
+              <img src="/img/papers/uniwetok.png"
+                alt="UniWeTok: An Unified Binary Tokenizer with Codebook Size 2^128 for Unified Multimodal Large Language Model">
+            </div>
+            <div class="publication-content">
+              <div class="publication-title">UniWeTok: An Unified Binary Tokenizer with Codebook Size 2<sup>128</sup> for
+                Unified Multimodal Large Language Model</div>
+              <div class="publication-authors">
+                Shaobin Zhuang*, Yuang Ai*, <span class="highlight-name">Jiaming Han</span>*, Weijia Mao, Xiaohui Li,
+                Fangyikang Wang, Xiao Wang, Yan Li, Shanchuan Lin, Kun Xu, Zhenheng Yang, Huaibo Huang, Xiangyu Yue, Hao
+                Chen, Yali Wang
+              </div>
+              <div class="publication-links">
+                <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2602.14178" class="badge badge-paper"><i
+                    class="fas fa-file-alt"></i>Paper</a>
+              </div>
+            </div>
+          </div>
+          <div class="publication-block">
+            <div class="publication-image">
+              <picture>
+                <source srcset="/img/papers/bridge.webp" type="image/webp">
+                <img src="/img/papers/bridge.jpg"
+                  alt="Bridge: Growing Visual Generative Capacity for Pre-Trained MLLMs">
+              </picture>
+            </div>
+            <div class="publication-content">
+              <div class="publication-title">Bridge: Growing Visual Generative Capacity for Pre-Trained MLLMs</div>
+              <div class="publication-authors">
+                Hanyu Wang*, <span class="highlight-name">Jiaming Han</span>*, Ziyan Yang, Qi Zhao, Shanchuan Lin,
+                Xiangyu Yue, Abhinav Shrivastava, Zhenheng Yang, Hao Chen
+              </div>
+              <div class="publication-links">
+                <a target="_blank" rel="noopener" href="https://hywang66.github.io/bridge/"
+                  class="badge badge-project"><i class="fas fa-globe"></i>Project Page</a>
+                <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2510.01546" class="badge badge-paper"><i
+                    class="fas fa-file-alt"></i>Paper</a>
+                <a target="_blank" rel="noopener" href="https://github.com/hywang66/Bridge" class="badge badge-code"><i
+                    class="fab fa-github"></i>Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication-block">
+            <div class="publication-image">
+              <img src="/img/papers/tar.png"
+                alt="Vision as a Dialect: Unifying Visual Understanding and Generation via Text-Aligned Representations">
+            </div>
+            <div class="publication-content">
+              <div class="publication-title">Vision as a Dialect: Unifying Visual Understanding and Generation via
+                Text-Aligned Representations</div>
+              <div class="publication-authors">
+                <span class="highlight-name">Jiaming Han</span>, Hao Chen, Yang Zhao, Hanyu Wang, Qi Zhao, Ziyan Yang,
+                Hao He, Xiangyu Yue, Lu Jiang
+              </div>
+              <div class="publication-links">
+                <span class="badge badge-conference">NeurlPS 2025</span>
+                <a target="_blank" rel="noopener" href="https://tar.csuhan.com/" class="badge badge-project"><i
+                    class="fas fa-globe"></i>Project Page</a>
+                <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2506.18898" class="badge badge-paper"><i
+                    class="fas fa-file-alt"></i>Paper</a>
+                <a target="_blank" rel="noopener" href="https://github.com/csuhan/Tar" class="badge badge-code"><i
+                    class="fab fa-github"></i>Code</a>
+                <a target="_blank" rel="noopener"
+                  href="https://huggingface.co/collections/ByteDance-Seed/tar-6864cf0d9fe59a3b91cc4260"
+                  class="badge badge-paper"><i class="fas fa-file-alt"></i>Models</a>
+                <a target="_blank" rel="noopener" href="https://huggingface.co/spaces/ByteDance-Seed/Tar-7B"
+                  class="badge badge-demo"><i class="fas fa-play"></i>Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication-block">
+            <div class="publication-image">
+              <img src="/img/papers/crosslmm.png"
+                alt="CrossLMM: Decoupling Long Video Sequences from LMMs via Dual Cross-Attention Mechanisms">
+            </div>
+            <div class="publication-content">
+              <div class="publication-title">CrossLMM: Decoupling Long Video Sequences from LMMs via Dual
+                Cross-Attention Mechanisms</div>
+              <div class="publication-authors">
+                Shilin Yan, <span class="highlight-name">Jiaming Han</span>, Joey Tsai, Hongwei Xue, Rongyao Fang,
+                Lingyi Hong, Ziyu Guo, Ray Zhang
+              </div>
+              <div class="publication-links">
+                <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2505.17020" class="badge badge-paper"><i
+                    class="fas fa-file-alt"></i>Paper</a>
+                <a target="_blank" rel="noopener" href="https://github.com/shilinyan99/CrossLMM"
+                  class="badge badge-code"><i class="fab fa-github"></i>Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication-block">
+            <div class="publication-image">
+              <img src="/img/papers/tdc.png" alt="Multimodal Long Video Modeling Based on Temporal Dynamic Context">
+            </div>
+            <div class="publication-content">
+              <div class="publication-title">Multimodal Long Video Modeling Based on Temporal Dynamic Context</div>
+              <div class="publication-authors">
+                Haoran Hao*, <span class="highlight-name">Jiaming Han</span>*, Yiyuan Zhang, Xiangyu Yue
+              </div>
+              <div class="publication-links">
+                <a target="_blank" rel="noopener" href="https://hoar012.github.io/TDC-Project/"
+                  class="badge badge-project"><i class="fas fa-globe"></i>Project Page</a>
+                <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2504.10443" class="badge badge-paper"><i
+                    class="fas fa-file-alt"></i>Paper</a>
+                <a target="_blank" rel="noopener" href="https://github.com/Hoar012/TDC-Video"
+                  class="badge badge-code"><i class="fab fa-github"></i>Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication-block">
+            <div class="publication-image">
+              <img src="/img/papers/reflect_vlm.png"
+                alt="Reflective Planning: Vision-Language Models for Multi-Stage Long-Horizon Robotic Manipulation">
+            </div>
+            <div class="publication-content">
+              <div class="publication-title">Reflective Planning: Vision-Language Models for Multi-Stage Long-Horizon
+                Robotic Manipulation</div>
+              <div class="publication-authors">
+                Yunhai Feng, <span class="highlight-name">Jiaming Han</span>, Zhuoran Yang, Xiangyu Yue, Sergey Levine,
+                Jianlan Luo
+              </div>
+              <div class="publication-links">
+                <span class="badge badge-conference">CoRL 2025</span>
+                <a target="_blank" rel="noopener" href="https://reflect-vlm.github.io/" class="badge badge-project"><i
+                    class="fas fa-globe"></i>Project Page</a>
+                <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2502.16707" class="badge badge-paper"><i
+                    class="fas fa-file-alt"></i>Paper</a>
+                <a target="_blank" rel="noopener" href="https://github.com/yunhaif/reflect-vlm"
+                  class="badge badge-code"><i class="fab fa-github"></i>Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication-block">
+            <div class="publication-image">
+              <picture>
+                <source srcset="/img/papers/rap.webp" type="image/webp">
+                <img src="/img/papers/rap.png"
+                  alt="Retrieval-Augmented Personalization for Multimodal Large Language Models">
+              </picture>
+            </div>
+            <div class="publication-content">
+              <div class="publication-title">Retrieval-Augmented Personalization for Multimodal Large Language Models
+              </div>
+              <div class="publication-authors">
+                Haoran Hao*, <span class="highlight-name">Jiaming Han</span>*, Changsheng Li, Yu-Feng Li, Xiangyu Yue
+              </div>
+              <div class="publication-links">
+                <span class="badge badge-conference">CVPR 2025</span>
+                <a target="_blank" rel="noopener" href="https://hoar012.github.io/RAP-Project/"
+                  class="badge badge-project"><i class="fas fa-globe"></i>Project Page</a>
+                <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2410.13360" class="badge badge-paper"><i
+                    class="fas fa-file-alt"></i>Paper</a>
+                <a target="_blank" rel="noopener" href="https://github.com/Hoar012/RAP-MLLM" class="badge badge-code"><i
+                    class="fab fa-github"></i>Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication-block">
+            <div class="publication-image">
+              <picture>
+                <source srcset="/img/papers/onellm.webp" type="image/webp">
+                <img src="/img/papers/onellm.png" alt="OneLLM: One Framework to Align All Modalities with Language">
+              </picture>
+            </div>
+            <div class="publication-content">
+              <div class="publication-title">OneLLM: One Framework to Align All Modalities with Language</div>
+              <div class="publication-authors">
+                <span class="highlight-name">Jiaming Han</span>, Kaixiong Gong, Yiyuan Zhang, Jiaqi Wang, Kaipeng Zhang,
+                Dahua Lin, Yu Qiao, Peng Gao, Xiangyu Yue.
+              </div>
+              <div class="publication-links">
+                <span class="badge badge-conference">CVPR 2024</span>
+                <a target="_blank" rel="noopener" href="https://onellm.csuhan.com/" class="badge badge-project"><i
+                    class="fas fa-globe"></i>Project Page</a>
+                <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2312.03700" class="badge badge-paper"><i
+                    class="fas fa-file-alt"></i>Paper</a>
+                <a target="_blank" rel="noopener" href="https://github.com/csuhan/OneLLM" class="badge badge-code"><i
+                    class="fab fa-github"></i>Code</a>
+                <a target="_blank" rel="noopener" href="https://huggingface.co/spaces/csuhan/OneLLM"
+                  class="badge badge-demo"><i class="fas fa-play"></i>Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication-block">
+            <div class="publication-image">
+              <img src="/img/papers/imagebind_llm.png" alt="ImageBind-LLM: Multi-modality Instruction Tuning">
+            </div>
+            <div class="publication-content">
+              <div class="publication-title">ImageBind-LLM: Multi-modality Instruction Tuning</div>
+              <div class="publication-authors">
+                <span class="highlight-name">Jiaming Han</span>*, Renrui Zhang*, Wenqi Shao*, Peng Gao*, Peng Xu*, Han
+                Xiao*,
+                Kaipeng Zhang, Chris Liu, Song Wen, Ziyu Guo, Xudong Lu, Shuai Ren, Yafei Wen,
+                Xiaoxin Chen, Xiangyu Yue, Hongsheng Li, Yu Qiao.
+              </div>
+              <div class="publication-links">
+                <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2309.03905" class="badge badge-paper"><i
+                    class="fas fa-file-alt"></i>Paper</a>
+                <a target="_blank" rel="noopener" href="https://github.com/OpenGVLab/LLaMA-Adapter"
+                  class="badge badge-code"><i class="fab fa-github"></i>Code</a>
+                <a target="_blank" rel="noopener" href="http://imagebind-llm.opengvlab.com/" class="badge badge-demo"><i
+                    class="fas fa-play"></i>Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication-block">
+            <div class="publication-image">
+              <img src="/img/papers/llama_adapter_v2.png"
+                alt="LLaMA-Adapter V2: Parameter-Efficient Visual Instruction Model">
+            </div>
+            <div class="publication-content">
+              <div class="publication-title">LLaMA-Adapter V2: Parameter-Efficient Visual Instruction Model</div>
+              <div class="publication-authors">
+                Peng Gao*, <span class="highlight-name">Jiaming Han</span>*, Renrui Zhang*, Ziyi Lin*, Shijie Geng,
+                Aojun Zhou, Wei Zhang, Pan Lu, Conghui He, Xiangyu Yue, Hongsheng Li, Yu Qiao.
+              </div>
+              <div class="publication-links">
+                <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2304.15010" class="badge badge-paper"><i
+                    class="fas fa-file-alt"></i>Paper</a>
+                <a target="_blank" rel="noopener" href="https://github.com/OpenGVLab/LLaMA-Adapter"
+                  class="badge badge-code"><i class="fab fa-github"></i>Code</a>
+                <a target="_blank" rel="noopener" href="http://llama-adapter.opengvlab.com/" class="badge badge-demo"><i
+                    class="fas fa-play"></i>Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication-block">
+            <div class="publication-image">
+              <picture>
+                <source srcset="/img/papers/llama_adapter.webp" type="image/webp">
+                <img src="/img/papers/llama_adapter.png"
+                  alt="LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention">
+              </picture>
+            </div>
+            <div class="publication-content">
+              <div class="publication-title">LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init
+                Attention</div>
+              <div class="publication-authors">
+                Renrui Zhang*, <span class="highlight-name">Jiaming Han</span>*, Aojun Zhou, Xiangfei Hu, Shilin Yan,
+                Pan Lu, Hongsheng Li, Peng Gao, Yu Qiao.
+              </div>
+              <div class="publication-links">
+                <span class="badge badge-conference">ICLR 2024</span>
+                <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2303.16199" class="badge badge-paper"><i
+                    class="fas fa-file-alt"></i>Paper</a>
+                <a target="_blank" rel="noopener" href="https://github.com/OpenGVLab/LLaMA-Adapter"
+                  class="badge badge-code"><i class="fab fa-github"></i>Code</a>
+                <a target="_blank" rel="noopener" href="https://huggingface.co/spaces/csuhan/LLaMA-Adapter"
+                  class="badge badge-demo"><i class="fas fa-play"></i>Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication-block">
+            <div class="publication-image">
+              <img src="/img/papers/VFA.png" alt="Few-Shot Object Detection via Variational Feature Aggregation">
+            </div>
+            <div class="publication-content">
+              <div class="publication-title">Few-Shot Object Detection via Variational Feature Aggregation</div>
+              <div class="publication-authors">
+                <span class="highlight-name">Jiaming Han</span>, Yuqiang Ren, Jian Ding, Ke Yan, Gui-Song Xia.
+              </div>
+              <div class="publication-links">
+                <span class="badge badge-conference">AAAI 2023</span>
+                <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2301.13411" class="badge badge-paper"><i
+                    class="fas fa-file-alt"></i>Paper</a>
+                <a target="_blank" rel="noopener" href="https://github.com/csuhan/VFA" class="badge badge-code"><i
+                    class="fab fa-github"></i>Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication-block">
+            <div class="publication-image">
+              <picture>
+                <source srcset="/img/papers/OpenDet.webp" type="image/webp">
+                <img src="/img/papers/OpenDet.png"
+                  alt="Expanding Low-Density Latent Regions for Open-Set Object Detection">
+              </picture>
+            </div>
+            <div class="publication-content">
+              <div class="publication-title">Expanding Low-Density Latent Regions for Open-Set Object Detection</div>
+              <div class="publication-authors">
+                <span class="highlight-name">Jiaming Han</span>, Yuqiang Ren, Jian Ding, Xingjia Pan, Ke Yan, Gui-Song
+                Xia.
+              </div>
+              <div class="publication-links">
+                <span class="badge badge-conference">CVPR 2022</span>
+                <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2203.14911" class="badge badge-paper"><i
+                    class="fas fa-file-alt"></i>Paper</a>
+                <a target="_blank" rel="noopener" href="https://github.com/csuhan/opendet2" class="badge badge-code"><i
+                    class="fab fa-github"></i>Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication-block">
+            <div class="publication-image">
+              <picture>
+                <source srcset="/img/papers/ReDet.webp" type="image/webp">
+                <img src="/img/papers/ReDet.png"
+                  alt="ReDet: A Rotation-Equivariant Detector for Aerial Object Detection">
+              </picture>
+            </div>
+            <div class="publication-content">
+              <div class="publication-title">ReDet: A Rotation-Equivariant Detector for Aerial Object Detection</div>
+              <div class="publication-authors">
+                <span class="highlight-name">Jiaming Han</span>, Jian Ding, Nan Xue, Gui-Song Xia.
+              </div>
+              <div class="publication-links">
+                <span class="badge badge-conference">CVPR 2021</span>
+                <a target="_blank" rel="noopener" href="https://redet.csuhan.com/" class="badge badge-project"><i
+                    class="fas fa-globe"></i>Project</a>
+                <a target="_blank" rel="noopener"
+                  href="https://openaccess.thecvf.com/content/CVPR2021/papers/Han_ReDet_A_Rotation-Equivariant_Detector_for_Aerial_Object_Detection_CVPR_2021_paper.pdf"
+                  class="badge badge-paper"><i class="fas fa-file-alt"></i>Paper</a>
+                <a target="_blank" rel="noopener" href="https://github.com/csuhan/ReDet" class="badge badge-code"><i
+                    class="fab fa-github"></i>Code</a>
+                <a href="/attaches/redet_poster.pdf" class="badge badge-paper"><i class="fas fa-file-alt"></i>Poster</a>
+                <a href="/attaches/redet_slide.pdf" class="badge badge-paper"><i class="fas fa-file-alt"></i>Slide</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="publication-block">
+            <div class="publication-image">
+              <img src="/img/papers/s2anet.png" alt="Align Deep Features for Oriented Object Detection">
+            </div>
+            <div class="publication-content">
+              <div class="publication-title">Align Deep Features for Oriented Object Detection</div>
+              <div class="publication-authors">
+                <span class="highlight-name">Jiaming Han</span>, Jian Ding, Jie Li, Gui-Song Xia.
+              </div>
+              <div class="publication-links">
+                <span class="badge badge-conference">TGRS 2021</span>
+                <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2008.09397" class="badge badge-paper"><i
+                    class="fas fa-file-alt"></i>Paper</a>
+                <a target="_blank" rel="noopener" href="https://github.com/csuhan/s2anet" class="badge badge-code"><i
+                    class="fab fa-github"></i>Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="Experience"><a href="#Experience" class="headerlink" title="Experience"></a><a
+            href="#Experience">Experience</a></h3>
+        <div class="timeline experience-timeline">
+          <div class="timeline-item">
+            <div class="timeline-logo">
+              <img src="/img/bytedance_logo.webp" alt="Bytedance Seed">
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">06/2024 - Present</div>
+              <div class="timeline-title">Bytedance Seed</div>
+              <p class="timeline-description">
+                Unified MLLM with Dr. <a href="http://www.lujiang.info" target="_blank">Lu Jiang</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-logo">
+              <img src="/img/shlab_logo.png" alt="Shanghai AI Lab">
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">10/2022 - 02/2024</div>
+              <div class="timeline-title">Shanghai AI Lab</div>
+              <p class="timeline-description">
+                Multimodal LLM with Dr. <a href="https://scholar.google.com.hk/citations?user=_go6DPsAAAAJ&hl=zh-CN"
+                  target="_blank">Peng Gao</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-logo">
+              <img src="/img/youtu_logo.png" alt="Tencent YouTu Lab">
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">05/2021 - 05/2022</div>
+              <div class="timeline-title">Tencent YouTu Lab</div>
+              <p class="timeline-description">
+                Object Detection with Dr. <a href="https://openreview.net/profile?id=~Yuqiang_Ren1"
+                  target="_blank">Yuqiang Ren</a>
+              </p>
+            </div>
+          </div>
+        </div>
 
 
-<h3 id="Biography"><a href="#Biography" class="headerlink" title="Biography"></a><a href="#Biography">Biography</a></h3><p>I am a PhD student of <a target="_blank" rel="noopener" href="http://mmlab.ie.cuhk.edu.hk/">MMLab</a>@<a target="_blank" rel="noopener" href="https://cuhk.edu.hk/english/index.html">CUHK</a> advised by Prof. <a target="_blank" rel="noopener" href="https://xyue.io/">Xiangyu Yue</a>. Recently, I focus on efficient and unified multimodal LLMs, such as <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2303.16199">LLaMA-Adpater</a>, <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2312.03700">OneLLM</a> and <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2506.18898">Tar</a>. I received my Master and Bachelor degree from <a target="_blank" rel="noopener" href="https://en.whu.edu.cn/">Wuhan University</a> and <a target="_blank" rel="noopener" href="https://en.csu.edu.cn/">Central South University</a>, respectively. I interned at <a target="_blank" rel="noopener" href="https://seed.bytedance.com/en">Bytedance Seed</a>, <a target="_blank" rel="noopener" href="https://www.shlab.org.cn/">Shanghai AI Lab</a> and <a target="_blank" rel="noopener" href="https://open.youtu.qq.com/#/open">Tencent YouTu Lab</a>.</p>
-<!-- More about me: <a href="mailto:hanjiaming@link.cuhk.edu.hk" class="badge"><i class="fas fa-envelope"></i>Email</a>  <a target="_blank" rel="noopener" href="https://scholar.google.com/citations?hl=en&user=vgcxKEcAAAAJ&view_op=list_works&sortby=pubdate" class="badge"><i class="fas fa-graduation-cap"></i>Google Scholar</a>  <a target="_blank" rel="noopener" href="https://github.com/csuhan" class="badge"><i class="fab fa-github"></i>Github</a>  <a href="https://csuhan.com/attaches/CV_Jiaming-Han.pdf" class="badge"><i class="fas fa-file-alt"></i>Curriculum Vitae</a> -->
+        <h3 id="Educations"><a href="#Educations" class="headerlink" title="Educations"></a><a
+            href="#Educations">Educations</a></h3>
+        <div class="timeline education-timeline">
+          <div class="timeline-item">
+            <div class="timeline-logo">
+              <img src="/img/cuhk_logo.jpg" alt="The Chinese University of Hong Kong">
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">09/2023 - Present</div>
+              <div class="timeline-title">PhD. The Chinese University of Hong Kong</div>
+            </div>
+          </div>
 
+          <div class="timeline-item">
+            <div class="timeline-logo">
+              <img src="/img/whu_logo.png" alt="Wuhan University">
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">09/2019 - 06/2022</div>
+              <div class="timeline-title">M.E. Wuhan University</div>
+            </div>
+          </div>
 
-<h3 id="News"><a href="#News" class="headerlink" title="News"></a><a href="#News">News</a></h3><div class="news-container">
-  <div class="news-slider">
-    <ul>
-      <li>09/2025: <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2506.18898">Tar</a> is accepted by <strong>NeurlPS 2025</strong>.</li>
-      <li>08/2025: <a target="_blank" rel="noopener" href="https://reflect-vlm.github.io/">Reflective Planning</a> is accepted by <strong>CoRL 2025</strong>.</li>
-      <li>02/2025: <a target="_blank" rel="noopener" href="https://hoar012.github.io/RAP-Project/">RAP</a> is accepted by <strong>CVPR 2025</strong>.</li>
-      <li>02/2024: <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2312.03700">OneLLM</a> is accepted by <strong>CVPR 2024</strong>.</li>
-      <li>01/2024: <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2303.16199">LLaMA-Adapter</a> is accepted by <strong>ICLR 2024</strong>!.</li>
-      <li>12/2023: We release <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2312.03700">OneLLM</a> which aligns eight modalities to language using a unified framework.</li>
-      <li>09/2023: <a target="_blank" rel="noopener" href="https://github.com/OpenGVLab/LLaMA-Adapter/tree/main/imagebind_LLM">ImageBind-LLM</a> is released at <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2309.03905">arXiv</a>.</li>
-      <li>05/2023: We release <a target="_blank" rel="noopener" href="https://github.com/OpenGVLab/LLaMA-Adapter/tree/main/imagebind_LLM">ImageBind-LLM</a>: a LLM connects Image, Video, Audio, Point Cloud and more! Check our <a target="_blank" rel="noopener" href="http://imagebind-llm.opengvlab.com/">demo</a>.</li>
-      <li>04/2023: We release multi-modal instruction model <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2304.15010">LLaMA-Adapter V2</a>. Check our demo at <a target="_blank" rel="noopener" href="http://llama-adapter.opengvlab.com/">OpenGVLab</a>.</li>
-      <li>03/2023: We release the <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2303.16199">paper</a> and <a target="_blank" rel="noopener" href="https://github.com/OpenGVLab/LLaMA-Adapter">code</a> of <strong>LLaMA-Adapter</strong>.</li>
-      <li>11/2022: One paper on Few-Shot Object Detection is accepted by <strong>AAAI 2023</strong>.</li>
-      <li>03/2022: We release the <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2203.14911">paper</a> and <a target="_blank" rel="noopener" href="https://github.com/csuhan/opendet2">code</a> of <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2203.14911">OpenDet</a>.</li>
-      <li>03/2022: One paper on Open-Set Object Detection is accepted by <strong>CVPR 2022</strong>.</li>
-      <li>02/2022: Our works <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2008.09397">S<sup>2</sup>A-Net</a> and <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2103.07733.pdf">ReDet</a> are included in OpenMMLab's <a target="_blank" rel="noopener" href="https://github.com/open-mmlab/mmrotate">mmrotate</a>.</li>
-      <li>08/2021: Third-party implementation of <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2008.09397">S<sup>2</sup>A-Net</a> with <a target="_blank" rel="noopener" href="https://github.com/Jittor/JDet">Jittor</a> and <a target="_blank" rel="noopener" href="https://github.com/PaddlePaddle/PaddleDetection/blob/release/2.0/configs/dota/README.md">PaddlePaddle</a>.</li>
-      <!-- <li>05/2021: Research intern in computer vision at <a target="_blank" rel="noopener" href="https://open.youtu.qq.com/#/open">Tencent YouTu Lab</a>.</li> -->
-      <li>03/2021: We release the <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2103.07733.pdf">paper</a> and <a target="_blank" rel="noopener" href="https://github.com/csuhan/ReDet">code</a> of <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2103.07733">ReDet</a>.</li>
-      <li>02/2021: One paper is accepted by <strong>CVPR 2021</strong>.</li>
-    </ul>
-  </div>
-  <!-- <div class="scroll-indicator">↓ Slide ↓</div> -->
-</div>
+          <div class="timeline-item">
+            <div class="timeline-logo">
+              <img src="/img/csu_logo.svg" alt="Central South University">
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">09/2015 - 06/2019</div>
+              <div class="timeline-title">B.E. Central South University</div>
+            </div>
+          </div>
+        </div>
 
-<h3 id="Selected-Publications"><a href="#Selected-Publications" class="headerlink" title="Selected Publications"></a><a href="#Publications">Selected Publications</a></h3><p/>
-<div class="publication-list">
-  <div class="publication-block">
-    <div class="publication-image">
-      <picture>
-        <source srcset="/img/papers/bridge.webp" type="image/webp">
-        <img src="/img/papers/bridge.jpg" alt="Bridge: Growing Visual Generative Capacity for Pre-Trained MLLMs">
-      </picture>
-    </div>
-    <div class="publication-content">
-      <div class="publication-title">Bridge: Growing Visual Generative Capacity for Pre-Trained MLLMs</div>
-      <div class="publication-authors">
-        Hanyu Wang*, <span class="highlight-name">Jiaming Han</span>*, Ziyan Yang, Qi Zhao, Shanchuan Lin, Xiangyu Yue, Abhinav Shrivastava, Zhenheng Yang, Hao Chen
-      </div>
-      <div class="publication-links">
-        <a target="_blank" rel="noopener" href="https://hywang66.github.io/bridge/" class="badge badge-project"><i class="fas fa-globe"></i>Project Page</a>
-        <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2510.01546" class="badge badge-paper"><i class="fas fa-file-alt"></i>Paper</a>
-        <a target="_blank" rel="noopener" href="https://github.com/hywang66/Bridge" class="badge badge-code"><i class="fab fa-github"></i>Code</a>
-      </div>
-    </div>
-  </div>
+        <h3 id="Activities"><a href="#Activities" class="headerlink" title="Activities"></a><a
+            href="#Activities">Activities</a></h3>
+        <ul>
+          <li>Reviewer of CVPR’21-24, ICCV’21-23, NIPS’23, ICLR’24, WACV’22, ECCV’22-24, AAAI’23-24</li>
+          <li>Reviewer of TPAMI, IJCV, TIP, ISPRS, TGRS, TNNLS</li>
+        </ul>
 
-  <div class="publication-block">
-    <div class="publication-image">
-      <img src="/img/papers/tar.png" alt="Vision as a Dialect: Unifying Visual Understanding and Generation via Text-Aligned Representations">
-    </div>
-    <div class="publication-content">
-      <div class="publication-title">Vision as a Dialect: Unifying Visual Understanding and Generation via Text-Aligned Representations</div>
-      <div class="publication-authors">
-        <span class="highlight-name">Jiaming Han</span>, Hao Chen, Yang Zhao, Hanyu Wang, Qi Zhao, Ziyan Yang, Hao He, Xiangyu Yue, Lu Jiang
+      </article>
       </div>
-      <div class="publication-links">
-        <span class="badge badge-conference">NeurlPS 2025</span>
-        <a target="_blank" rel="noopener" href="https://tar.csuhan.com/" class="badge badge-project"><i class="fas fa-globe"></i>Project Page</a>
-        <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2506.18898" class="badge badge-paper"><i class="fas fa-file-alt"></i>Paper</a>
-        <a target="_blank" rel="noopener" href="https://github.com/csuhan/Tar" class="badge badge-code"><i class="fab fa-github"></i>Code</a>
-        <a target="_blank" rel="noopener" href="https://huggingface.co/collections/ByteDance-Seed/tar-6864cf0d9fe59a3b91cc4260" class="badge badge-paper"><i class="fas fa-file-alt"></i>Models</a>
-        <a target="_blank" rel="noopener" href="https://huggingface.co/spaces/ByteDance-Seed/Tar-7B" class="badge badge-demo"><i class="fas fa-play"></i>Demo</a>
+    </main>
+    <div class="nav-wrap">
+      <div class="nav"><button class="site-nav" aria-label="Toggle navigation menu">
+          <div class="navicon"></div>
+        </button>
+        <ul class="nav_items">
+          <li class="nav_item"><a class="nav-page" href="/#Biography"> Biography</a></li>
+          <li class="nav_item"><a class="nav-page" href="/#News"> News</a></li>
+          <li class="nav_item"><a class="nav-page" href="/#Publications"> Publications</a></li>
+          <li class="nav_item"><a class="nav-page" href="/#Experience"> Experience</a></li>
+          <li class="nav_item"><a class="nav-page" href="/#Activities"> Activities</a></li>
+          <li class="nav_item"><a class="nav-page" href="/#Educations"> Educations</a></li>
+        </ul>
       </div>
+      <div class="cd-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
     </div>
-  </div>
+    <footer id="page_footer">
+      <div class="footer_wrap">
+        <div class="footer_info">
+          <div class="copyright">&copy;2020 - 2025 by Jiaming Han</div>
+          <div class="theme-info">Views: <span id="busuanzi_container_site_pv"><span
+                id="busuanzi_value_site_pv"></span></span>&nbsp;&nbsp;&nbsp;Visitors: <span
+              id="busuanzi_container_site_uv"><span id="busuanzi_value_site_uv"></span></span></div>
+          <div class="theme-info">Powered by <a target="_blank" href="https://hexo.io" rel="nofollow noopener">Hexo</a>
+            & <a target="_blank" href="https://github.com/PhosphorW/hexo-theme-academia"
+              rel="nofollow noopener">Academia Theme</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/main.js" defer></script>
+    <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+</body>
 
-  <div class="publication-block">
-    <div class="publication-image">
-      <img src="/img/papers/crosslmm.png" alt="CrossLMM: Decoupling Long Video Sequences from LMMs via Dual Cross-Attention Mechanisms">
-    </div>
-    <div class="publication-content">
-      <div class="publication-title">CrossLMM: Decoupling Long Video Sequences from LMMs via Dual Cross-Attention Mechanisms</div>
-      <div class="publication-authors">
-        Shilin Yan, <span class="highlight-name">Jiaming Han</span>, Joey Tsai, Hongwei Xue, Rongyao Fang, Lingyi Hong, Ziyu Guo, Ray Zhang
-      </div>
-      <div class="publication-links">
-        <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2505.17020" class="badge badge-paper"><i class="fas fa-file-alt"></i>Paper</a>
-        <a target="_blank" rel="noopener" href="https://github.com/shilinyan99/CrossLMM" class="badge badge-code"><i class="fab fa-github"></i>Code</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="publication-block">
-    <div class="publication-image">
-      <img src="/img/papers/tdc.png" alt="Multimodal Long Video Modeling Based on Temporal Dynamic Context">
-    </div>
-    <div class="publication-content">
-      <div class="publication-title">Multimodal Long Video Modeling Based on Temporal Dynamic Context</div>
-      <div class="publication-authors">
-        Haoran Hao*, <span class="highlight-name">Jiaming Han</span>*, Yiyuan Zhang, Xiangyu Yue
-      </div>
-      <div class="publication-links">
-        <a target="_blank" rel="noopener" href="https://hoar012.github.io/TDC-Project/" class="badge badge-project"><i class="fas fa-globe"></i>Project Page</a>
-        <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2504.10443" class="badge badge-paper"><i class="fas fa-file-alt"></i>Paper</a>
-        <a target="_blank" rel="noopener" href="https://github.com/Hoar012/TDC-Video" class="badge badge-code"><i class="fab fa-github"></i>Code</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="publication-block">
-    <div class="publication-image">
-      <img src="/img/papers/reflect_vlm.png" alt="Reflective Planning: Vision-Language Models for Multi-Stage Long-Horizon Robotic Manipulation">
-    </div>
-    <div class="publication-content">
-      <div class="publication-title">Reflective Planning: Vision-Language Models for Multi-Stage Long-Horizon Robotic Manipulation</div>
-      <div class="publication-authors">
-        Yunhai Feng, <span class="highlight-name">Jiaming Han</span>, Zhuoran Yang, Xiangyu Yue, Sergey Levine, Jianlan Luo
-      </div>
-      <div class="publication-links">
-        <span class="badge badge-conference">CoRL 2025</span>
-        <a target="_blank" rel="noopener" href="https://reflect-vlm.github.io/" class="badge badge-project"><i class="fas fa-globe"></i>Project Page</a>
-        <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2502.16707" class="badge badge-paper"><i class="fas fa-file-alt"></i>Paper</a>
-        <a target="_blank" rel="noopener" href="https://github.com/yunhaif/reflect-vlm" class="badge badge-code"><i class="fab fa-github"></i>Code</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="publication-block">
-    <div class="publication-image">
-      <picture>
-        <source srcset="/img/papers/rap.webp" type="image/webp">
-        <img src="/img/papers/rap.png" alt="Retrieval-Augmented Personalization for Multimodal Large Language Models">
-      </picture>
-    </div>
-    <div class="publication-content">
-      <div class="publication-title">Retrieval-Augmented Personalization for Multimodal Large Language Models</div>
-      <div class="publication-authors">
-        Haoran Hao*, <span class="highlight-name">Jiaming Han</span>*, Changsheng Li, Yu-Feng Li, Xiangyu Yue
-      </div>
-      <div class="publication-links">
-        <span class="badge badge-conference">CVPR 2025</span>
-        <a target="_blank" rel="noopener" href="https://hoar012.github.io/RAP-Project/" class="badge badge-project"><i class="fas fa-globe"></i>Project Page</a>
-        <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2410.13360" class="badge badge-paper"><i class="fas fa-file-alt"></i>Paper</a>
-        <a target="_blank" rel="noopener" href="https://github.com/Hoar012/RAP-MLLM" class="badge badge-code"><i class="fab fa-github"></i>Code</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="publication-block">
-    <div class="publication-image">
-      <picture>
-        <source srcset="/img/papers/onellm.webp" type="image/webp">
-        <img src="/img/papers/onellm.png" alt="OneLLM: One Framework to Align All Modalities with Language">
-      </picture>
-    </div>
-    <div class="publication-content">
-      <div class="publication-title">OneLLM: One Framework to Align All Modalities with Language</div>
-      <div class="publication-authors">
-        <span class="highlight-name">Jiaming Han</span>, Kaixiong Gong, Yiyuan Zhang, Jiaqi Wang, Kaipeng Zhang,
-        Dahua Lin, Yu Qiao, Peng Gao, Xiangyu Yue.
-      </div>
-      <div class="publication-links">
-        <span class="badge badge-conference">CVPR 2024</span>
-        <a target="_blank" rel="noopener" href="https://onellm.csuhan.com/" class="badge badge-project"><i class="fas fa-globe"></i>Project Page</a>
-        <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2312.03700" class="badge badge-paper"><i class="fas fa-file-alt"></i>Paper</a>
-        <a target="_blank" rel="noopener" href="https://github.com/csuhan/OneLLM" class="badge badge-code"><i class="fab fa-github"></i>Code</a>
-        <a target="_blank" rel="noopener" href="https://huggingface.co/spaces/csuhan/OneLLM" class="badge badge-demo"><i class="fas fa-play"></i>Demo</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="publication-block">
-    <div class="publication-image">
-      <img src="/img/papers/imagebind_llm.png" alt="ImageBind-LLM: Multi-modality Instruction Tuning">
-    </div>
-    <div class="publication-content">
-      <div class="publication-title">ImageBind-LLM: Multi-modality Instruction Tuning</div>
-      <div class="publication-authors">
-        <span class="highlight-name">Jiaming Han</span>*, Renrui Zhang*, Wenqi Shao*, Peng Gao*, Peng Xu*, Han Xiao*,
-        Kaipeng Zhang, Chris Liu, Song Wen, Ziyu Guo, Xudong Lu, Shuai Ren, Yafei Wen,
-        Xiaoxin Chen, Xiangyu Yue, Hongsheng Li, Yu Qiao.
-      </div>
-      <div class="publication-links">
-        <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2309.03905" class="badge badge-paper"><i class="fas fa-file-alt"></i>Paper</a>
-        <a target="_blank" rel="noopener" href="https://github.com/OpenGVLab/LLaMA-Adapter" class="badge badge-code"><i class="fab fa-github"></i>Code</a>
-        <a target="_blank" rel="noopener" href="http://imagebind-llm.opengvlab.com/" class="badge badge-demo"><i class="fas fa-play"></i>Demo</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="publication-block">
-    <div class="publication-image">
-      <img src="/img/papers/llama_adapter_v2.png" alt="LLaMA-Adapter V2: Parameter-Efficient Visual Instruction Model">
-    </div>
-    <div class="publication-content">
-      <div class="publication-title">LLaMA-Adapter V2: Parameter-Efficient Visual Instruction Model</div>
-      <div class="publication-authors">
-        Peng Gao*, <span class="highlight-name">Jiaming Han</span>*, Renrui Zhang*, Ziyi Lin*, Shijie Geng, Aojun Zhou, Wei Zhang, Pan Lu, Conghui He, Xiangyu Yue, Hongsheng Li, Yu Qiao.
-      </div>
-      <div class="publication-links">
-        <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2304.15010" class="badge badge-paper"><i class="fas fa-file-alt"></i>Paper</a>
-        <a target="_blank" rel="noopener" href="https://github.com/OpenGVLab/LLaMA-Adapter" class="badge badge-code"><i class="fab fa-github"></i>Code</a>
-        <a target="_blank" rel="noopener" href="http://llama-adapter.opengvlab.com/" class="badge badge-demo"><i class="fas fa-play"></i>Demo</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="publication-block">
-    <div class="publication-image">
-      <picture>
-        <source srcset="/img/papers/llama_adapter.webp" type="image/webp">
-        <img src="/img/papers/llama_adapter.png" alt="LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention">
-      </picture>
-    </div>
-    <div class="publication-content">
-      <div class="publication-title">LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention</div>
-      <div class="publication-authors">
-        Renrui Zhang*, <span class="highlight-name">Jiaming Han</span>*, Aojun Zhou, Xiangfei Hu, Shilin Yan, Pan Lu, Hongsheng Li, Peng Gao, Yu Qiao.
-      </div>
-      <div class="publication-links">
-        <span class="badge badge-conference">ICLR 2024</span>
-        <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2303.16199" class="badge badge-paper"><i class="fas fa-file-alt"></i>Paper</a>
-        <a target="_blank" rel="noopener" href="https://github.com/OpenGVLab/LLaMA-Adapter" class="badge badge-code"><i class="fab fa-github"></i>Code</a>
-        <a target="_blank" rel="noopener" href="https://huggingface.co/spaces/csuhan/LLaMA-Adapter" class="badge badge-demo"><i class="fas fa-play"></i>Demo</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="publication-block">
-    <div class="publication-image">
-      <img src="/img/papers/VFA.png" alt="Few-Shot Object Detection via Variational Feature Aggregation">
-    </div>
-    <div class="publication-content">
-      <div class="publication-title">Few-Shot Object Detection via Variational Feature Aggregation</div>
-      <div class="publication-authors">
-        <span class="highlight-name">Jiaming Han</span>, Yuqiang Ren, Jian Ding, Ke Yan, Gui-Song Xia.
-      </div>
-      <div class="publication-links">
-        <span class="badge badge-conference">AAAI 2023</span>
-        <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2301.13411" class="badge badge-paper"><i class="fas fa-file-alt"></i>Paper</a>
-        <a target="_blank" rel="noopener" href="https://github.com/csuhan/VFA" class="badge badge-code"><i class="fab fa-github"></i>Code</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="publication-block">
-    <div class="publication-image">
-      <picture>
-        <source srcset="/img/papers/OpenDet.webp" type="image/webp">
-        <img src="/img/papers/OpenDet.png" alt="Expanding Low-Density Latent Regions for Open-Set Object Detection">
-      </picture>
-    </div>
-    <div class="publication-content">
-      <div class="publication-title">Expanding Low-Density Latent Regions for Open-Set Object Detection</div>
-      <div class="publication-authors">
-        <span class="highlight-name">Jiaming Han</span>, Yuqiang Ren, Jian Ding, Xingjia Pan, Ke Yan, Gui-Song Xia.
-      </div>
-      <div class="publication-links">
-        <span class="badge badge-conference">CVPR 2022</span>
-        <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2203.14911" class="badge badge-paper"><i class="fas fa-file-alt"></i>Paper</a>
-        <a target="_blank" rel="noopener" href="https://github.com/csuhan/opendet2" class="badge badge-code"><i class="fab fa-github"></i>Code</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="publication-block">
-    <div class="publication-image">
-      <picture>
-        <source srcset="/img/papers/ReDet.webp" type="image/webp">
-        <img src="/img/papers/ReDet.png" alt="ReDet: A Rotation-Equivariant Detector for Aerial Object Detection">
-      </picture>
-    </div>
-    <div class="publication-content">
-      <div class="publication-title">ReDet: A Rotation-Equivariant Detector for Aerial Object Detection</div>
-      <div class="publication-authors">
-        <span class="highlight-name">Jiaming Han</span>, Jian Ding, Nan Xue, Gui-Song Xia.
-      </div>
-      <div class="publication-links">
-        <span class="badge badge-conference">CVPR 2021</span>
-        <a target="_blank" rel="noopener" href="https://redet.csuhan.com/" class="badge badge-project"><i class="fas fa-globe"></i>Project</a>
-        <a target="_blank" rel="noopener" href="https://openaccess.thecvf.com/content/CVPR2021/papers/Han_ReDet_A_Rotation-Equivariant_Detector_for_Aerial_Object_Detection_CVPR_2021_paper.pdf" class="badge badge-paper"><i class="fas fa-file-alt"></i>Paper</a>
-        <a target="_blank" rel="noopener" href="https://github.com/csuhan/ReDet" class="badge badge-code"><i class="fab fa-github"></i>Code</a>
-        <a href="/attaches/redet_poster.pdf" class="badge badge-paper"><i class="fas fa-file-alt"></i>Poster</a>
-        <a href="/attaches/redet_slide.pdf" class="badge badge-paper"><i class="fas fa-file-alt"></i>Slide</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="publication-block">
-    <div class="publication-image">
-      <img src="/img/papers/s2anet.png" alt="Align Deep Features for Oriented Object Detection">
-    </div>
-    <div class="publication-content">
-      <div class="publication-title">Align Deep Features for Oriented Object Detection</div>
-      <div class="publication-authors">
-        <span class="highlight-name">Jiaming Han</span>, Jian Ding, Jie Li, Gui-Song Xia.
-      </div>
-      <div class="publication-links">
-        <span class="badge badge-conference">TGRS 2021</span>
-        <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2008.09397" class="badge badge-paper"><i class="fas fa-file-alt"></i>Paper</a>
-        <a target="_blank" rel="noopener" href="https://github.com/csuhan/s2anet" class="badge badge-code"><i class="fab fa-github"></i>Code</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<h3 id="Experience"><a href="#Experience" class="headerlink" title="Experience"></a><a href="#Experience">Experience</a></h3><div class="timeline experience-timeline">
-  <div class="timeline-item">
-    <div class="timeline-logo">
-      <img src="/img/bytedance_logo.webp" alt="Bytedance Seed">
-    </div>
-    <div class="timeline-content">
-      <div class="timeline-date">06/2024 - Present</div>
-      <div class="timeline-title">Bytedance Seed</div>
-      <p class="timeline-description">
-        Unified MLLM with Dr. <a href="http://www.lujiang.info" target="_blank">Lu Jiang</a>
-      </p>
-    </div>
-  </div>
-  
-  <div class="timeline-item">
-    <div class="timeline-logo">
-      <img src="/img/shlab_logo.png" alt="Shanghai AI Lab">
-    </div>
-    <div class="timeline-content">
-      <div class="timeline-date">10/2022 - 02/2024</div>
-      <div class="timeline-title">Shanghai AI Lab</div>
-      <p class="timeline-description">
-        Multimodal LLM with Dr. <a href="https://scholar.google.com.hk/citations?user=_go6DPsAAAAJ&hl=zh-CN" target="_blank">Peng Gao</a>
-      </p>
-    </div>
-  </div>
-  
-  <div class="timeline-item">
-    <div class="timeline-logo">
-      <img src="/img/youtu_logo.png" alt="Tencent YouTu Lab">
-    </div>
-    <div class="timeline-content">
-      <div class="timeline-date">05/2021 - 05/2022</div>
-      <div class="timeline-title">Tencent YouTu Lab</div>
-      <p class="timeline-description">
-        Object Detection with Dr. <a href="https://openreview.net/profile?id=~Yuqiang_Ren1" target="_blank">Yuqiang Ren</a>
-      </p>
-    </div>
-  </div>
-</div>
-
-
-<h3 id="Educations"><a href="#Educations" class="headerlink" title="Educations"></a><a href="#Educations">Educations</a></h3><div class="timeline education-timeline">
-  <div class="timeline-item">
-    <div class="timeline-logo">
-      <img src="/img/cuhk_logo.jpg" alt="The Chinese University of Hong Kong">
-    </div>
-    <div class="timeline-content">
-      <div class="timeline-date">09/2023 - Present</div>
-      <div class="timeline-title">PhD. The Chinese University of Hong Kong</div>
-    </div>
-  </div>
-  
-  <div class="timeline-item">
-    <div class="timeline-logo">
-      <img src="/img/whu_logo.png" alt="Wuhan University">
-    </div>
-    <div class="timeline-content">
-      <div class="timeline-date">09/2019 - 06/2022</div>
-      <div class="timeline-title">M.E. Wuhan University</div>
-    </div>
-  </div>
-  
-  <div class="timeline-item">
-    <div class="timeline-logo">
-      <img src="/img/csu_logo.svg" alt="Central South University">
-    </div>
-    <div class="timeline-content">
-      <div class="timeline-date">09/2015 - 06/2019</div>
-      <div class="timeline-title">B.E. Central South University</div>
-    </div>
-  </div>
-</div>
-
-<h3 id="Activities"><a href="#Activities" class="headerlink" title="Activities"></a><a href="#Activities">Activities</a></h3><ul>
-<li>Reviewer of CVPR’21-24, ICCV’21-23, NIPS’23, ICLR’24, WACV’22, ECCV’22-24, AAAI’23-24</li>
-<li>Reviewer of TPAMI, IJCV, TIP, ISPRS, TGRS, TNNLS</li>
-</ul>
-<!-- ## More
-
-🍰[My favorite things](/more)
-👯‍♂️[Friendship links](/friends) -->
-
-</article></div></main><div class="nav-wrap"><div class="nav"><button class="site-nav" aria-label="Toggle navigation menu"><div class="navicon"></div></button><ul class="nav_items"><li class="nav_item"><a class="nav-page" href="/#Biography"> Biography</a></li><li class="nav_item"><a class="nav-page" href="/#News"> News</a></li><li class="nav_item"><a class="nav-page" href="/#Publications"> Publications</a></li><li class="nav_item"><a class="nav-page" href="/#Experience"> Experience</a></li><li class="nav_item"><a class="nav-page" href="/#Activities"> Activities</a></li><li class="nav_item"><a class="nav-page" href="/#Educations"> Educations</a></li></ul></div><div class="cd-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></div></div><footer id="page_footer"><div class="footer_wrap"><div class="footer_qrcode"><img src="/img/mini_program.jpg" loading="lazy" width="120" height="120"></div><div class="footer_info"><div class="copyright">&copy;2020 - 2025 by Jiaming Han</div><div class="theme-info">Views: <span id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv"></span></span>&nbsp;&nbsp;&nbsp;Visitors: <span id="busuanzi_container_site_uv"><span id="busuanzi_value_site_uv"></span></span></div><div class="theme-info">Powered by <a target="_blank" href="https://hexo.io" rel="nofollow noopener">Hexo</a> & <a target="_blank" href="https://github.com/PhosphorW/hexo-theme-academia" rel="nofollow noopener">Academia Theme</a></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery-pjax@latest/jquery.pjax.min.js"></script><script src="/js/main.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script></body></html>
+</html>

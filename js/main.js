@@ -1,151 +1,190 @@
-// Debounce function for performance optimization
-function debounce(func, wait) {
-    var timeout;
-    return function() {
-        var context = this, args = arguments;
-        clearTimeout(timeout);
-        timeout = setTimeout(function() {
-            func.apply(context, args);
-        }, wait);
+(() => {
+  function debounce(func, wait) {
+    let timeoutId;
+    return (...args) => {
+      window.clearTimeout(timeoutId);
+      timeoutId = window.setTimeout(() => func(...args), wait);
     };
-}
+  }
 
-// Reusable toggle function
-function toggleClasses(triggerElement, targetElement, class1, class2) {
-    $(triggerElement).click(function () {
-        var $target = $(targetElement);
-        if ($target.hasClass(class1)) {
-            $target.removeClass(class1).addClass(class2);
+  function toggleClasses(triggerSelector, targetSelector, class1, class2) {
+    const target = document.querySelector(targetSelector);
+    if (!target) return;
+    document.querySelectorAll(triggerSelector).forEach((trigger) => {
+      trigger.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (target.classList.contains(class1)) {
+          target.classList.remove(class1);
+          target.classList.add(class2);
         } else {
-            $target.removeClass(class2).addClass(class1);
+          target.classList.remove(class2);
+          target.classList.add(class1);
         }
+      });
     });
-}
+  }
 
-// Resize handling
-function initResizeHandler() {
-    var $window = $(window);
-    var $page = $(".page");
-    var $sideCard = $(".side-card");
+  function resetMenuStates() {
+    const headerWrap = document.querySelector(".header_wrap");
+    const authorLinks = document.querySelector(".author-links");
+    const nav = document.querySelector(".nav");
 
-    var handleResize = function () {
-        if ($window.width() < 1280 && $window.width() > 540) {
-            $page.css({
-                "width": $window.width() - $sideCard.width() - 90,
-                "float": "left"
-            });
-        } else {
-            $page.removeAttr("style");
-        }
+    if (headerWrap && headerWrap.classList.contains("menus-open")) {
+      headerWrap.classList.remove("menus-open");
+      headerWrap.classList.add("menus-close");
+    }
+    if (authorLinks && authorLinks.classList.contains("is-open")) {
+      authorLinks.classList.remove("is-open");
+      authorLinks.classList.add("is-close");
+    }
+    if (nav && nav.classList.contains("nav-open")) {
+      nav.classList.remove("nav-open");
+      nav.classList.add("nav-close");
+    }
+  }
+
+  function initResizeHandler() {
+    const page = document.querySelector(".page");
+    const sideCard = document.querySelector(".side-card");
+    if (!page || !sideCard) return;
+
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width < 1280 && width > 540) {
+        const sideCardWidth = sideCard.getBoundingClientRect().width;
+        const pageWidth = Math.max(0, width - sideCardWidth - 90);
+        page.style.width = `${pageWidth}px`;
+        page.style.float = "left";
+      } else {
+        page.style.removeProperty("width");
+        page.style.removeProperty("float");
+      }
     };
 
-    // Use debounce to improve performance
-    $window.resize(debounce(handleResize, 250));
-    // Run once on init
+    window.addEventListener("resize", debounce(handleResize, 250));
     handleResize();
-}
+  }
 
-// Menu interactions
-function initMenuHandlers() {
-    // Initialize toggle handlers
+  function initMenuHandlers() {
     toggleClasses(".menus_icon", ".header_wrap", "menus-open", "menus-close");
     toggleClasses(".m-social-links", ".author-links", "is-open", "is-close");
     toggleClasses(".site-nav", ".nav", "nav-open", "nav-close");
 
-    // Click outside handler
-    $(document).click(function(e){
-        var target = $(e.target);
+    document.addEventListener("click", (event) => {
+      const target = event.target instanceof Element ? event.target : null;
+      if (!target) return;
 
-        // Close navigation if clicking outside
-        if(target.closest(".nav").length === 0) {
-            $(".nav").removeClass("nav-open").addClass("nav-close");
+      if (!target.closest(".nav")) {
+        const nav = document.querySelector(".nav");
+        if (nav) {
+          nav.classList.remove("nav-open");
+          nav.classList.add("nav-close");
         }
+      }
 
-        // Close social links if clicking outside
-        if(target.closest(".author-links").length === 0) {
-            $(".author-links").removeClass("is-open").addClass("is-close");
+      if (!target.closest(".author-links")) {
+        const authorLinks = document.querySelector(".author-links");
+        if (authorLinks) {
+          authorLinks.classList.remove("is-open");
+          authorLinks.classList.add("is-close");
         }
+      }
 
-        // Close menu if clicking outside
-        if(target.closest(".menus_icon").length === 0 && target.closest(".menus_items").length === 0) {
-            $(".header_wrap").removeClass("menus-open").addClass("menus-close");
+      if (!target.closest(".menus_icon") && !target.closest(".menus_items")) {
+        const headerWrap = document.querySelector(".header_wrap");
+        if (headerWrap) {
+          headerWrap.classList.remove("menus-open");
+          headerWrap.classList.add("menus-close");
         }
+      }
     });
-}
+  }
 
-// Back to top functionality
-function initBackToTop() {
-    var offset = 100,
-        scroll_top_duration = 700,
-        $back_to_top = $('.nav-wrap');
+  function initBackToTop() {
+    const backToTopWrap = document.querySelector(".nav-wrap");
+    const backToTopButton = document.querySelector(".cd-top");
+    if (!backToTopWrap || !backToTopButton) return;
 
-    // Hide or show the "back to top" link
-    $(window).scroll(function () {
-        ($(this).scrollTop() > offset) ? $back_to_top.addClass('is-visible') : $back_to_top.removeClass('is-visible');
+    const updateVisibility = () => {
+      if (window.scrollY > 100) backToTopWrap.classList.add("is-visible");
+      else backToTopWrap.classList.remove("is-visible");
+    };
+
+    window.addEventListener("scroll", updateVisibility, { passive: true });
+    updateVisibility();
+
+    backToTopButton.addEventListener("click", (event) => {
+      event.preventDefault();
+      if ("scrollBehavior" in document.documentElement.style) {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        window.scrollTo(0, 0);
+      }
+      resetMenuStates();
     });
+  }
 
-    // Smooth scroll to top
-    $('.cd-top').on('click', function (event) {
-        event.preventDefault();
-        $('body,html').animate({
-            scrollTop: 0,
-        }, scroll_top_duration);
+  function initSmoothScroll() {
+    document.addEventListener("click", (event) => {
+      const target = event.target instanceof Element ? event.target : null;
+      const anchor = target ? target.closest("a[href]") : null;
+      if (!anchor) return;
+
+      const href = anchor.getAttribute("href");
+      if (!href || href === "#" || !href.includes("#")) return;
+      if (anchor.getAttribute("target") === "_blank") return;
+
+      let url;
+      try {
+        url = new URL(href, window.location.href);
+      } catch {
+        return;
+      }
+
+      if (url.origin !== window.location.origin || url.pathname !== window.location.pathname) return;
+      if (!url.hash) return;
+
+      const id = decodeURIComponent(url.hash.slice(1));
+      const scrollTarget = document.getElementById(id);
+      if (!scrollTarget) return;
+
+      event.preventDefault();
+      if ("scrollBehavior" in document.documentElement.style) {
+        scrollTarget.scrollIntoView({ behavior: "smooth", block: "start" });
+      } else {
+        scrollTarget.scrollIntoView(true);
+      }
+      resetMenuStates();
     });
-}
+  }
 
-// Pjax initialization
-function initPjax() {
-    $(document).pjax('a[target!=_blank]','.page', {
-        fragment: '.page',
-        timeout: 5000
+  function initImageFallbacks() {
+    document.querySelectorAll("img[data-fallback-src]").forEach((img) => {
+      const fallbackSrc = img.getAttribute("data-fallback-src");
+      if (!fallbackSrc) return;
+
+      const applyFallback = () => {
+        img.removeEventListener("error", applyFallback);
+        img.removeAttribute("data-fallback-src");
+        img.src = fallbackSrc;
+      };
+
+      img.addEventListener("error", applyFallback);
+      if (img.complete && img.naturalWidth === 0) applyFallback();
     });
-    $(document).on({
-        'pjax:click': function() {
-            $('body,html').animate({
-                scrollTop: 0,
-            }, 700);
-        },
-        'pjax:end': function() {
-            // Reset all menu states
-            resetMenuStates();
-        }
-    });
-}
+  }
 
-// Smooth scroll initialization
-function initSmoothScroll() {
-    $('a[href*=\#]:not([href=\#])').click(function () {
-        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 700);
-                return false;
-            }
-        }
-    });
-}
-
-// Reset all menu states
-function resetMenuStates() {
-    if ($('.header_wrap').hasClass('menus-open')) {
-        $('.header_wrap').removeClass('menus-open').addClass('menus-close');
-    }
-    if ($('.author-links').hasClass('is-open')) {
-        $('.author-links').removeClass('is-open').addClass('is-close');
-    }
-    if ($('.nav').hasClass('nav-open')) {
-        $('.nav').removeClass('nav-open').addClass('nav-close');
-    }
-}
-
-// Initialize all functionality
-$(function () {
+  function init() {
     initResizeHandler();
     initMenuHandlers();
     initBackToTop();
-    initPjax();
     initSmoothScroll();
-});
+    initImageFallbacks();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
