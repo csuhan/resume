@@ -92,7 +92,18 @@ body {
 .side-card .cv-links {
   display: flex;
   justify-content: center;
+  width: 100%;
+  margin-left: 0;
   margin-top: 10px;
+}
+
+@media (max-width: 34em) {
+  .author-links .social-icons img.social-icon-img {
+    width: 1.28571em;
+    height: 1.28571em;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 @media (min-width: 34em) {
@@ -183,6 +194,8 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   border: 0.5px solid #e9ecef;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  content-visibility: auto;
+  contain-intrinsic-size: 360px 220px;
 }
 
 .publication-block:hover {
