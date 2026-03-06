@@ -98,6 +98,31 @@ body {
 }
 
 @media (max-width: 34em) {
+  .side-card .card-wrap {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .side-card .author-discrip,
+  .side-card .author-links,
+  .side-card .cv-links {
+    display: none !important;
+  }
+
+  .side-card .author-avatar {
+    display: block;
+    width: 96px;
+    height: 96px;
+  }
+
+  .side-card .author-avatar img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+  }
+
   .author-links .social-icons img.social-icon-img {
     width: 1.28571em;
     height: 1.28571em;
