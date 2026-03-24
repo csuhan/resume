@@ -89,6 +89,12 @@ body {
   text-align: center;
 }
 
+.author-avatar picture,
+.publication-image picture,
+.timeline-logo picture {
+  display: block;
+}
+
 .side-card .cv-links {
   display: flex;
   justify-content: center;
@@ -258,6 +264,11 @@ body {
   position: relative;
   max-width: 100%;
   margin: 2rem 0;
+}
+
+.timeline-item {
+  content-visibility: auto;
+  contain-intrinsic-size: 96px 96px;
 }
 
 .timeline::before {

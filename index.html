@@ -13,7 +13,13 @@
   <link rel="shortcut icon" href="/img/logo_ico.png">
   <link rel="stylesheet" href="/css/index.min.css">
   <link rel="stylesheet" href="/css/custom.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preload" as="style"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </noscript>
   <meta name="generator" content="Hexo 5.4.2">
 </head>
 
@@ -37,8 +43,13 @@
   <main id="page_main">
     <div class="side-card sticky">
       <div class="card-wrap" itemscope itemtype="http://schema.org/Person">
-        <div class="author-avatar"><img class="avatar-img" src="/img/photo.jpg" data-fallback-src="/img/profile.png"
-            alt="avatar" width="110" height="110" decoding="async" fetchpriority="high"></div>
+        <div class="author-avatar">
+          <picture>
+            <source srcset="/img/photo.webp" type="image/webp">
+            <img class="avatar-img" src="/img/photo.jpg" data-fallback-src="/img/profile.png" alt="avatar" width="110"
+              height="110" decoding="async" fetchpriority="high">
+          </picture>
+        </div>
         <div class="author-discrip">
           <h3>Jiaming Han</h3>
           <p class="author-bio">be simple, be happy</p>
@@ -124,8 +135,12 @@
         <div class="publication-list">
           <div class="publication-block">
             <div class="publication-image">
-              <img src="/img/papers/bitdance.png" alt="BitDance: Scaling Autoregressive Generative Models with Binary Tokens"
-                width="240" height="135" loading="lazy" decoding="async">
+              <picture>
+                <source srcset="/img/papers/bitdance.webp" type="image/webp">
+                <img src="/img/papers/bitdance.png"
+                  alt="BitDance: Scaling Autoregressive Generative Models with Binary Tokens" width="240" height="135"
+                  loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="publication-content">
               <div class="publication-title">BitDance: Scaling Autoregressive Generative Models with Binary Tokens</div>
@@ -148,9 +163,12 @@
           </div>
           <div class="publication-block">
             <div class="publication-image">
-              <img src="/img/papers/uniwetok.png"
-                alt="UniWeTok: An Unified Binary Tokenizer with Codebook Size 2^128 for Unified Multimodal Large Language Model"
-                width="240" height="135" loading="lazy" decoding="async">
+              <picture>
+                <source srcset="/img/papers/uniwetok.webp" type="image/webp">
+                <img src="/img/papers/uniwetok.png"
+                  alt="UniWeTok: An Unified Binary Tokenizer with Codebook Size 2^128 for Unified Multimodal Large Language Model"
+                  width="240" height="135" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="publication-content">
               <div class="publication-title">UniWeTok: An Unified Binary Tokenizer with Codebook Size 2<sup>128</sup> for
@@ -224,9 +242,12 @@
 
           <div class="publication-block">
             <div class="publication-image">
-              <img src="/img/papers/crosslmm.png"
-                alt="CrossLMM: Decoupling Long Video Sequences from LMMs via Dual Cross-Attention Mechanisms" width="240"
-                height="135" loading="lazy" decoding="async">
+              <picture>
+                <source srcset="/img/papers/crosslmm.webp" type="image/webp">
+                <img src="/img/papers/crosslmm.png"
+                  alt="CrossLMM: Decoupling Long Video Sequences from LMMs via Dual Cross-Attention Mechanisms"
+                  width="240" height="135" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="publication-content">
               <div class="publication-title">CrossLMM: Decoupling Long Video Sequences from LMMs via Dual
@@ -246,8 +267,11 @@
 
           <div class="publication-block">
             <div class="publication-image">
-              <img src="/img/papers/tdc.png" alt="Multimodal Long Video Modeling Based on Temporal Dynamic Context"
-                width="240" height="135" loading="lazy" decoding="async">
+              <picture>
+                <source srcset="/img/papers/tdc.webp" type="image/webp">
+                <img src="/img/papers/tdc.png" alt="Multimodal Long Video Modeling Based on Temporal Dynamic Context"
+                  width="240" height="135" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="publication-content">
               <div class="publication-title">Multimodal Long Video Modeling Based on Temporal Dynamic Context</div>
@@ -267,9 +291,12 @@
 
           <div class="publication-block">
             <div class="publication-image">
-              <img src="/img/papers/reflect_vlm.png"
-                alt="Reflective Planning: Vision-Language Models for Multi-Stage Long-Horizon Robotic Manipulation"
-                width="240" height="135" loading="lazy" decoding="async">
+              <picture>
+                <source srcset="/img/papers/reflect_vlm.webp" type="image/webp">
+                <img src="/img/papers/reflect_vlm.png"
+                  alt="Reflective Planning: Vision-Language Models for Multi-Stage Long-Horizon Robotic Manipulation"
+                  width="240" height="135" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="publication-content">
               <div class="publication-title">Reflective Planning: Vision-Language Models for Multi-Stage Long-Horizon
@@ -347,8 +374,11 @@
 
           <div class="publication-block">
             <div class="publication-image">
-              <img src="/img/papers/imagebind_llm.png" alt="ImageBind-LLM: Multi-modality Instruction Tuning"
-                width="240" height="135" loading="lazy" decoding="async">
+              <picture>
+                <source srcset="/img/papers/imagebind_llm.webp" type="image/webp">
+                <img src="/img/papers/imagebind_llm.png" alt="ImageBind-LLM: Multi-modality Instruction Tuning"
+                  width="240" height="135" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="publication-content">
               <div class="publication-title">ImageBind-LLM: Multi-modality Instruction Tuning</div>
@@ -371,9 +401,12 @@
 
           <div class="publication-block">
             <div class="publication-image">
-              <img src="/img/papers/llama_adapter_v2.png"
-                alt="LLaMA-Adapter V2: Parameter-Efficient Visual Instruction Model" width="240" height="135"
-                loading="lazy" decoding="async">
+              <picture>
+                <source srcset="/img/papers/llama_adapter_v2.webp" type="image/webp">
+                <img src="/img/papers/llama_adapter_v2.png"
+                  alt="LLaMA-Adapter V2: Parameter-Efficient Visual Instruction Model" width="240" height="135"
+                  loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="publication-content">
               <div class="publication-title">LLaMA-Adapter V2: Parameter-Efficient Visual Instruction Model</div>
@@ -422,8 +455,11 @@
 
           <div class="publication-block">
             <div class="publication-image">
-              <img src="/img/papers/VFA.png" alt="Few-Shot Object Detection via Variational Feature Aggregation"
-                width="240" height="135" loading="lazy" decoding="async">
+              <picture>
+                <source srcset="/img/papers/VFA.webp" type="image/webp">
+                <img src="/img/papers/VFA.png" alt="Few-Shot Object Detection via Variational Feature Aggregation"
+                  width="240" height="135" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="publication-content">
               <div class="publication-title">Few-Shot Object Detection via Variational Feature Aggregation</div>
@@ -496,8 +532,11 @@
 
           <div class="publication-block">
             <div class="publication-image">
-              <img src="/img/papers/s2anet.png" alt="Align Deep Features for Oriented Object Detection" width="240"
-                height="135" loading="lazy" decoding="async">
+              <picture>
+                <source srcset="/img/papers/s2anet.webp" type="image/webp">
+                <img src="/img/papers/s2anet.png" alt="Align Deep Features for Oriented Object Detection" width="240"
+                  height="135" loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="publication-content">
               <div class="publication-title">Align Deep Features for Oriented Object Detection</div>
@@ -534,8 +573,11 @@
 
           <div class="timeline-item">
             <div class="timeline-logo">
-              <img src="/img/shlab_logo.png" alt="Shanghai AI Lab" width="50" height="50" loading="lazy"
-                decoding="async">
+              <picture>
+                <source srcset="/img/shlab_logo.webp" type="image/webp">
+                <img src="/img/shlab_logo.png" alt="Shanghai AI Lab" width="50" height="50" loading="lazy"
+                  decoding="async">
+              </picture>
             </div>
             <div class="timeline-content">
               <div class="timeline-date">10/2022 - 02/2024</div>
@@ -549,8 +591,11 @@
 
           <div class="timeline-item">
             <div class="timeline-logo">
-              <img src="/img/youtu_logo.png" alt="Tencent YouTu Lab" width="50" height="50" loading="lazy"
-                decoding="async">
+              <picture>
+                <source srcset="/img/youtu_logo.webp" type="image/webp">
+                <img src="/img/youtu_logo.png" alt="Tencent YouTu Lab" width="50" height="50" loading="lazy"
+                  decoding="async">
+              </picture>
             </div>
             <div class="timeline-content">
               <div class="timeline-date">05/2021 - 05/2022</div>
@@ -580,8 +625,11 @@
 
           <div class="timeline-item">
             <div class="timeline-logo">
-              <img src="/img/whu_logo.png" alt="Wuhan University" width="50" height="50" loading="lazy"
-                decoding="async">
+              <picture>
+                <source srcset="/img/whu_logo.webp" type="image/webp">
+                <img src="/img/whu_logo.png" alt="Wuhan University" width="50" height="50" loading="lazy"
+                  decoding="async">
+              </picture>
             </div>
             <div class="timeline-content">
               <div class="timeline-date">09/2019 - 06/2022</div>
