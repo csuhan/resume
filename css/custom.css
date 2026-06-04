@@ -573,6 +573,40 @@ h3 > a {
   white-space: nowrap !important;
 }
 
+/* Full List link in the Selected Publications heading */
+.full-list-link {
+  display: inline-block;
+  margin-left: 0.6em;
+  vertical-align: middle;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid rgba(15, 91, 103, 0.22);
+  padding: 0.28em 0.85em;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background var(--transition), color var(--transition),
+    transform var(--transition);
+}
+
+.full-list-link i {
+  margin-left: 0.4em;
+  font-size: 0.9em;
+  transition: transform var(--transition);
+}
+
+.full-list-link:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.full-list-link:hover i {
+  transform: translateX(3px);
+}
+
 @media (max-width: 768px) {
   .publication-block {
     flex-direction: column;
