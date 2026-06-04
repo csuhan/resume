@@ -10,7 +10,9 @@
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
   <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+  <link rel="dns-prefetch" href="https://csuhan-scholar-api.hf.space">
   <link rel="shortcut icon" href="/img/logo_ico.png">
+  <link rel="preload" as="image" href="/img/photo.webp" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="/css/index.min.css">
   <link rel="stylesheet" href="/css/custom.css">
   <link rel="preload" as="style"
@@ -118,8 +120,7 @@
             target="_blank" rel="noopener" href="https://seed.bytedance.com/en">Bytedance Seed</a>, <a target="_blank"
             rel="noopener" href="https://www.shlab.org.cn/">Shanghai AI Lab</a> and <a target="_blank" rel="noopener"
             href="https://open.youtu.qq.com/#/open">Tencent YouTu Lab</a>.</p>
-            <p>I have board interest in computer vision, natural language processing and deep learning. 
-              Recently, I focus on the unification of vision and language in one autoregressive model, such as multimodal LLMs, unified multimodal models and autoregressive generative models.</p>
+            <p>My research builds toward a unified intelligent system through <strong>multimodal foundation models</strong>&mdash;from efficient multimodal alignment that binds diverse modalities to language (LLaMA-Adapter, OneLLM), to unifying multimodal understanding and generation within a single autoregressive model (Tar, BitDance), and now toward <strong>world models</strong>, with the long-term goal of building a unified large model that perceives, generates, reasons, and acts in the world.</p>
               
             <p class="job-highlight"><strong>I expect to graduate in Summer 2027 and am actively seeking full-time job opportunities. Feel free to contact me via
                 Email<a class="job-contact-icon" href="mailto:hanjiaming@link.cuhk.edu.hk" aria-label="Email"
@@ -212,9 +213,12 @@
             </div>
             <div class="publication-block representative-work">
               <div class="publication-image">
-                <img src="/img/papers/tar.png"
-                  alt="Vision as a Dialect: Unifying Visual Understanding and Generation via Text-Aligned Representations"
-                  width="240" height="135" loading="lazy" decoding="async">
+                <picture>
+                  <source srcset="/img/papers/tar.webp" type="image/webp">
+                  <img src="/img/papers/tar.png"
+                    alt="Vision as a Dialect: Unifying Visual Understanding and Generation via Text-Aligned Representations"
+                    width="240" height="135" loading="lazy" decoding="async">
+                </picture>
               </div>
               <div class="publication-content">
                 <div class="publication-title">Vision as a Dialect: Unifying Visual Understanding and Generation via
@@ -615,8 +619,11 @@
         <div class="timeline education-timeline">
           <div class="timeline-item">
             <div class="timeline-logo">
-              <img src="/img/cuhk_logo.jpg" alt="The Chinese University of Hong Kong" width="50" height="50"
-                loading="lazy" decoding="async">
+              <picture>
+                <source srcset="/img/cuhk_logo.webp" type="image/webp">
+                <img src="/img/cuhk_logo.jpg" alt="The Chinese University of Hong Kong" width="50" height="50"
+                  loading="lazy" decoding="async">
+              </picture>
             </div>
             <div class="timeline-content">
               <div class="timeline-date">09/2023 - Present</div>
@@ -640,8 +647,11 @@
 
           <div class="timeline-item">
             <div class="timeline-logo">
-              <img src="/img/csu_logo.svg" alt="Central South University" width="50" height="50" loading="lazy"
-                decoding="async">
+              <picture>
+                <source srcset="/img/csu_logo.webp" type="image/webp">
+                <img src="/img/csu_logo.png" alt="Central South University" width="50" height="50" loading="lazy"
+                  decoding="async">
+              </picture>
             </div>
             <div class="timeline-content">
               <div class="timeline-date">09/2015 - 06/2019</div>
@@ -681,15 +691,16 @@
           <div class="theme-info">Views: <span id="busuanzi_container_site_pv"><span
                 id="busuanzi_value_site_pv"></span></span>&nbsp;&nbsp;&nbsp;Visitors: <span
               id="busuanzi_container_site_uv"><span id="busuanzi_value_site_uv"></span></span></div>
-          <div class="theme-info">Powered by <a href="http://trae.ai/" target="_blank">TRAE</a> & GPT-5.2-Codex</div>
         </div>
       </div>
     </footer>
-    <script src="/js/main.js" defer></script>
+    <script src="/js/main.min.js" defer></script>
     <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
     <script>
     (function() {
       var SCHOLAR_API = "https://csuhan-scholar-api.hf.space/citations?author_id=vgcxKEcAAAAJ";
+      var runFetch = function() { fetchScholar(); };
+      function fetchScholar() {
       fetch(SCHOLAR_API)
         .then(function(r) { return r.json(); })
         .then(function(data) {
@@ -727,6 +738,12 @@
           });
         })
         .catch(function() {});
+      }
+      if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(runFetch, { timeout: 2000 });
+      } else {
+        window.addEventListener('load', function() { setTimeout(runFetch, 200); });
+      }
     })();
     </script>
 </body>
