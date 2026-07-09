@@ -30,11 +30,13 @@ PNG_OPT = True
 
 # (source_relative_path, max_size, also_make_webp)
 TARGETS: list[tuple[str, tuple[int, int], bool]] = [
-    # Remaining items (paper thumbnails + avatar already processed on first run)
-    ("shlab_logo.png", LOGO_MAX, True),
-    ("youtu_logo.png", LOGO_MAX, True),
-    ("cuhk_logo.jpg", LOGO_MAX, True),
-    ("whu_logo.png", LOGO_MAX, True),
+    # Newly added paper thumbnails (webp only)
+    ("papers/opengame.webp", PAPER_MAX, True),
+    ("papers/screencoder.webp", PAPER_MAX, True),
+    ("papers/auto_rubric.webp", PAPER_MAX, True),
+    ("papers/lc_erd.webp", PAPER_MAX, True),
+    ("papers/bitlm.webp", PAPER_MAX, True),
+    ("papers/gide.webp", PAPER_MAX, True),
 ]
 
 
