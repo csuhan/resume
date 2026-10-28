@@ -19,36 +19,45 @@
     <title>Room 03 · Jiaming Han's 3D Home</title>
           <script>
 (function () {
-  // three.js comes from public npm CDNs; the app from a CDN mirror of this
-  // folder, with csuhan.com/3D/ as fallback. Each source gets a short head
-  // start; the first to answer is used.
+  // three.js comes from public npm CDNs; the app from CDN mirrors of this
+  // folder, with csuhan.com/3D/ as the last resort. Sources are raced.
   var threeCdns = ["https://registry.npmmirror.com/three/0.180.0/files","https://cdn.jsdelivr.net/npm/three@0.180.0","https://unpkg.com/three@0.180.0"];
-  var origins = ["https://cdn.jsdelivr.net/gh/csuhan/resume@8a01498/3D/","./"];
-  var entry = "static/index-BdFEgbRA.js";
+  var origins = ["./"];
+  var entry = "static/index-CpBPmge3.js";
   var css = "static/index-CqLle_DH.css";
   var abs = function (o) { return new URL(o, location.href).href; };
-  function probe(urls, ms) {
+  // race all candidates; the first good answer wins. If none answers within
+  // `ms`, keep waiting for whichever answers first, ending on the last URL.
+  function race(urls, ms) {
     return new Promise(function (resolve) {
-      var i = 0;
-      (function next() {
-        if (i >= urls.length) return resolve(urls[0]);
-        var url = urls[i++];
-        var settled = false;
-        var timer = setTimeout(function () { if (!settled) { settled = true; next(); } }, ms);
-        // a HEAD-sized probe: the browser keeps the connection warm for the real request
-        fetch(url, { method: 'GET', mode: 'cors', cache: 'force-cache' }).then(function (r) {
-          if (settled) return;
-          settled = true;
-          clearTimeout(timer);
-          if (r.ok) resolve(url); else next();
-        }, function () { if (!settled) { settled = true; clearTimeout(timer); next(); } });
-      })();
+      var done = false;
+      var failed = 0;
+      function win(u) { if (!done) { done = true; resolve(u); } }
+      urls.forEach(function (url, i) {
+        // csuhan.com itself (last entry) only joins after a head start for the CDNs
+        var delay = urls.length > 1 && i === urls.length - 1 ? ms : 0;
+        setTimeout(function () {
+          if (done) return;
+          fetch(url, { mode: 'cors', cache: 'force-cache' }).then(function (r) {
+            if (r.ok) win(url); else if (++failed === urls.length) win(urls[urls.length - 1]);
+          }, function () { if (++failed === urls.length) win(urls[urls.length - 1]); });
+        }, delay);
+      });
     });
   }
   var threeFile = '/build/three.module.min.js';
-  var threeP = probe(threeCdns.map(function (c) { return c + threeFile; }), 3000);
+  // race a tiny file on each three.js CDN, then load the library once from the winner
+  var threeP = race(threeCdns.map(function (c) { return c + '/package.json'; }), 0).then(function (u) {
+    var root = u.slice(0, -'/package.json'.length);
+    var pre = document.createElement('link');
+    pre.rel = 'modulepreload';
+    pre.crossOrigin = 'anonymous';
+    pre.href = root + threeFile;
+    document.head.appendChild(pre);
+    return root + threeFile;
+  });
   // probe the app origin with a tiny file so nothing is fetched twice
-  var appP = probe(origins.map(function (o) { return abs(o) + 'favicon.svg'; }), 3000).then(function (u) { return u.slice(0, -'favicon.svg'.length) + css; });
+  var appP = race(origins.map(function (o) { return abs(o) + 'favicon.svg'; }), 2500).then(function (u) { return u.slice(0, -'favicon.svg'.length) + css; });
   appP.then(function (cssUrl) {
     var l = document.createElement('link');
     l.rel = 'stylesheet';
@@ -348,7 +357,7 @@
           </button>
           <span class="eyebrow">WECHAT</span>
           <h2 id="qrTitle">Scan to connect</h2>
-          <div class="qr-frame"><img src="https://cdn.jsdelivr.net/gh/csuhan/resume@8a01498/3D/assets/wechat_qrcode.png" alt="Jiaming Han WeChat QR code" /></div>
+          <div class="qr-frame"><img src="./assets/wechat_qrcode.png" alt="Jiaming Han WeChat QR code" /></div>
           <p>Or email me directly at<br /><a href="mailto:hanjiaming@link.cuhk.edu.hk">hanjiaming@link.cuhk.edu.hk</a></p>
         </div>
       </div>
@@ -377,7 +386,7 @@
     <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
 
     <noscript>
-      <div class="noscript">This 3D room needs JavaScript. You can still open the <a href="https://cdn.jsdelivr.net/gh/csuhan/resume@8a01498/3D/assets/CV_Jiaming-Han.pdf">CV</a> or email hanjiaming@link.cuhk.edu.hk.</div>
+      <div class="noscript">This 3D room needs JavaScript. You can still open the <a href="./assets/CV_Jiaming-Han.pdf">CV</a> or email hanjiaming@link.cuhk.edu.hk.</div>
     </noscript>
   </body>
 </html>
