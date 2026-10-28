@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <title>Jiaming Han</title>
+  <meta name="author" content="Jiaming Han">
+  <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+  <link rel="dns-prefetch" href="https://csuhan-scholar-api.hf.space">
+  <link rel="shortcut icon" href="/img/logo_ico.png">
+  <link rel="preload" as="image" href="/img/photo.webp" type="image/webp" fetchpriority="high">
+  <style data-src="/css/index.min.css">:root{--color-primary:#c62641;--color-secondary:#7a8288;--color-text:#494e52;--color-code-text:#525252;--color-bg:#fff;--color-code-bg:#f8f8f8;--color-selection-bg:rgba(128,203,196,0.251);--spacing-base:1.6rem;--spacing-section:2rem;--spacing-code:10px 20px;--breakpoint-sm:34em;--breakpoint-lg:66.67em;--font-size-base:1.6rem;--font-size-code:1.6rem;--transition-fast:all 0.2s ease-in-out;--transition-slow:all 0.3s ease}.transition-fast{transition:var(--transition-fast);-webkit-transition:var(--transition-fast)}.transition-slow{transition:var(--transition-slow);-webkit-transition:var(--transition-slow)}.page .highlight,.page pre{overflow:auto;margin:0 0 var(--spacing-base);padding:0;background:var(--color-code-bg);color:var(--color-code-text);font-size:var(--font-size-code);clear:both}figure.highlight{position:relative}.page .highlight code{padding:.2rem .3rem;word-wrap:break-word;font-size:var(--font-size-code)!important}.page pre{padding:10px 20px}.page pre code{padding:0;background:0 0;color:var(--color-code-text);text-shadow:none}.page .highlight{position:relative;border-radius:1px}.page .highlight pre{margin:0;padding:8px 0;border:none}.page .highlight .line::selection{background:var(--color-selection-bg);color:var(--color-code-text)}.page .highlight .line.marked{background-color:var(--color-selection-bg)}.page .highlight table{position:relative;margin:0;width:auto;border:none}.page .highlight td{padding:0;border:none}.page .highlight .gutter pre{padding-right:.8rem;padding-left:.7rem;background-color:#f8f8f8;color:#cfd8dc;text-align:right}.page .highlight .code pre{padding-right:.5rem;padding-left:.5rem;width:100%;background-color:#f8f8f8}.page .highlight .line{height:1rem}.page .gutter{user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none}.page .gist table{width:auto}.page .gist table td{border:none}.page pre .deletion{background:#fdd}.page pre .addition{background:#dfd}.page pre .meta{color:#7c4dff}.page pre .comment{color:rgba(144,164,174,.565)}.page pre .comment::selection{background:rgba(128,203,196,.251);color:#525252}.page pre .attribute,.page pre .css .class,.page pre .css .id,.page pre .css .pseudo,.page pre .html .doctype,.page pre .regexp,.page pre .ruby .constant,.page pre .tag .name,.page pre .variable,.page pre .xml .doctype,.page pre .xml .pi,.page pre .xml .tag .title{color:#e53935}.page pre .attribute::selection,.page pre .css .class::selection,.page pre .css .id::selection,.page pre .css .pseudo::selection,.page pre .html .doctype::selection,.page pre .regexp::selection,.page pre .ruby .constant::selection,.page pre .tag .name::selection,.page pre .variable::selection,.page pre .xml .doctype::selection,.page pre .xml .pi::selection,.page pre .xml .tag .title::selection{background:rgba(128,203,196,.251);color:#525252}.page pre .tag{color:#c62641}.page pre .tag::selection{background:rgba(128,203,196,.251);color:#525252}.page pre .command,.page pre .constant,.page pre .literal,.page pre .number,.page pre .params,.page pre .preprocessor{color:#f76d47}.page pre .command::selection,.page pre .constant::selection,.page pre .literal::selection,.page pre .number::selection,.page pre .params::selection,.page pre .preprocessor::selection{background:rgba(128,203,196,.251);color:#525252}.page pre .built_in{color:#ffb62c}.page pre .built_in::selection{background:rgba(128,203,196,.251);color:#525252}.page pre .css .rules .attribute,.page pre .formula,.page pre .header,.page pre .inheritance,.page pre .number,.page pre .ruby .class .title,.page pre .ruby .symbol,.page pre .special,.page pre .string,.page pre .value,.page pre .xml .cdata{color:#0086b3}.page pre .css .rules .attribute::selection,.page pre .formula::selection,.page pre .header::selection,.page pre .inheritance::selection,.page pre .number::selection,.page pre .ruby .class .title::selection,.page pre .ruby .symbol::selection,.page pre .special::selection,.page pre .string::selection,.page pre .value::selection,.page pre .xml .cdata::selection{background:rgba(128,203,196,.251);color:#525252}.page pre .css .hexcolor,.page pre .keyword,.page pre .title{color:#c62641}.page pre .css .hexcolor::selection,.page pre .keyword::selection,.page pre .title::selection{background:rgba(128,203,196,.251);color:#525252}.page pre .coffeescript .title,.page pre .function,.page pre .javascript .title,.page pre .perl .sub,.page pre .python .decorator,.page pre .python .title,.page pre .ruby .function .title,.page pre .ruby .title .keyword{color:#6182b8}.page pre .coffeescript .title::selection,.page pre .function::selection,.page pre .javascript .title::selection,.page pre .perl .sub::selection,.page pre .python .decorator::selection,.page pre .python .title::selection,.page pre .ruby .function .title::selection,.page pre .ruby .title .keyword::selection{background:rgba(128,203,196,.251);color:#525252}.page pre .javascript .function,.page pre .tag .attr{color:#7c4dff}.page pre .javascript .function::selection,.page pre .tag .attr::selection{background:rgba(128,203,196,.251);color:#525252}*{-webkit-text-size-adjust:none}html{height:100%;margin:0;font-size:62.5%;-webkit-font-smoothing:antialiased;box-sizing:border-box}body{height:100%;margin:0;padding:0;color:#494e52;font-size:1.8em;line-height:1.5;font-family:"Times New Roman",FangSong,STFangsong,sans-serif;scroll-behavior:smooth}.btn,a,span{font-family:"Times New Roman",FangSong,STFangsong,sans-serif}img{max-width:100%}blockquote{position:relative;color:#999;font-weight:400;background-color:#f7f7f7;border-left:5px solid #777;padding:1rem 1rem 1rem 1.5rem;margin:1rem 3rem 1rem 2rem}blockquote p{margin:0}#page_header{position:relative;border-bottom:1px solid #f2f3f3;-webkit-animation:intro .3s both;animation:intro .3s both;-webkit-animation-delay:.15s;animation-delay:.15s;z-index:20}.header_wrap{max-width:1200px;margin-left:auto;margin-right:auto;clear:both;padding:1.6rem 2rem 1rem;font-size:2rem}#blog_name{display:inline-block;width:auto;vertical-align:top}#blog_name a{display:block;margin:0 1.6rem;padding:.8rem 0;color:#7a8288;font-weight:600;text-decoration:none;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}#blog_name a:hover{color:#000}@media (max-width:34em){.menus-open .menus_items{visibility:visible;opacity:1;pointer-events:auto}.menus_items{visibility:hidden;opacity:0;position:absolute;right:10px;margin:0;box-shadow:rgba(0,0,0,.25) 0 0 10px;padding:5px;border-width:1px;border-style:solid;border-color:#f2f3f3;border-image:initial;border-radius:4px;background:#fff;list-style:none;transition:all ease-in-out .2s;pointer-events:none}.menus_items::before{display:block;content:"";position:absolute;top:-10px;left:calc(50% + 15px);width:0;z-index:0;border-style:solid;border-width:0 10px 10px;border-color:#fff transparent}.menus_items li{display:block;border-bottom:1px solid #f2f3f3}.menus_items li a{display:block;color:#7a8288;font-size:1.6rem;margin:0;padding:8px 15px;text-decoration:none;transition:all .2s ease-in-out 0s}}.menus_icon{display:inline-block;position:absolute;right:30px;top:22px;height:30px;width:30px;background-color:#7a8288;color:#fff;cursor:pointer;padding:0 .3rem;border-width:0;outline:0}.menus-open .navicon{background:0 0}.menus-open .navicon::before{transform-origin:50% 50%;top:0;left:-3px;width:25px;transform:rotate3d(0,0,1,45deg)}.menus-open .navicon::after{transform-origin:50% 50%;top:0;left:-3px;width:25px;transform:rotate3d(0,0,1,-45deg)}@media (min-width:34em){.menus_items{display:inline-block;list-style-type:none;margin:0;clear:both}.menus_items li{display:table-cell;vertical-align:middle}.menus_items li a{position:relative;display:block;margin:0 1.6rem;padding:.8rem 0;color:#7a8288;text-decoration:none}.menus_items li a::before{content:"";position:absolute;left:0;bottom:0;height:4px;background:#bdc1c4;width:100%;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;-webkit-transform:scaleX(0);-ms-transform:scaleX(0);transform:scaleX(0)}.menus_items li a:hover{color:#5c6266}.menus_items li a:hover::before{-webkit-transform:scaleX(1);-ms-transform:scaleX(1);transform:scaleX(1)}.menus_icon{display:none}}#page_main{min-height:72%;margin-left:auto;margin-right:auto;clear:both;margin-top:3.2rem;margin-bottom:6.4rem;padding-left:1.6rem;padding-right:1.6rem;animation:intro .3s both;animation-delay:.35s}#page_main::after{clear:both;content:"";display:table}.page-title{font-size:3rem;padding:0 1.2rem}.page article{padding-left:1.2rem;padding-right:1.2rem}.page article h1{font-size:3rem}.page article h2{font-size:2.8rem;margin-bottom:-1.3rem}.page article h3{font-size:2.6rem}.page article li,.page article p{font-size:1.8rem}.page article ol,.page article ul{padding-left:2.2rem}.page article a{color:#494e52;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}.page article a:hover{color:#c62641}.page article .highlight{overflow:auto;margin:0 0 1rem;padding:0;background:#f8f8f8;color:#525252;line-height:20px}.page article .gutter pre{padding-right:.8rem;padding-left:.7rem;background-color:#f8f8f8;color:#cfd8dc;text-align:right}.page article code{font-family:"Times New Roman",FangSong,STFangsong,sans-serif;padding:.2rem .3rem;background:rgba(27,31,35,.05);word-wrap:break-word}@media screen and (min-width:66.67em){#page_main{max-width:1200px}}@media (min-width:34em){.page{width:82.5%;float:right;margin-right:0}.page .page-title{padding:0 3.6rem}.page article{padding:0 3.6rem 3.6rem}}.side-card{clear:both;margin-bottom:1.6rem;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.side-card .card-wrap{padding-left:10px}.side-card img{width:100%}.side-card li,.side-card p{font-size:1.4rem;line-height:1.5}.author-avatar{display:table-cell;vertical-align:top;width:40px;height:40px}.author-avatar img{width:100%;max-width:110px;border-radius:50%}.author-discrip{display:table-cell;vertical-align:top;padding-left:15px;padding-right:15px;line-height:1}.author-discrip h3{margin:0;font-size:1.8rem}.author-discrip .author-bio{font-size:1.2rem;margin:.3rem 0}.author-links{display:table-cell;position:relative;vertical-align:top;z-index:10;cursor:pointer}.author-links li{white-space:nowrap;margin-bottom:.5em}.author-links a{margin-bottom:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;color:inherit;font-size:1.4rem;text-decoration:none}.author-links button{margin-bottom:0}.btn{display:inline-block;margin-bottom:.25em;font-size:.75em;font-weight:700;text-align:center;background-color:#7a8288;cursor:pointer;color:#fff!important;padding:.6em 1em;text-decoration:none;border-radius:4px;border-width:0!important;border-style:initial!important;border-color:initial!important;border-image:initial!important}.btn:hover{background-color:#333}.m-social-links{background-color:#fff;color:#7a8288!important;border-width:1px!important;border-style:solid!important;border-color:#bdc1c4!important;border-image:initial!important}.m-social-links:hover{color:#fff!important}.social-icons{visibility:hidden;opacity:0;position:absolute;right:0;width:115px;margin-top:15px;padding-top:8px;padding-left:10px;list-style-type:none;border:1px solid #f2f3f3;border-radius:4px;background:#fff;z-index:-1;box-shadow:0 0 10px rgba(0,0,0,.25);cursor:default;transition:all ease-in-out .2s}.social-icons::before{display:block;content:"";position:absolute;top:-10px;left:calc(50% + 15px);width:0;z-index:0;border-style:solid;border-width:0 10px 10px;border-color:#fff transparent;transition:all .2s ease-in-out}.social-icons a{font-size:1.7rem}.social-icons li{display:inline-block}.social-icons .fa,.social-icons .fab,.social-icons .fas{display:inline-block;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#000;width:1.28571em;text-align:center;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}.social-icons .fa:hover,.social-icons .fab:hover,.social-icons .fas:hover{color:#c62641}.is-open .social-icons{visibility:visible;opacity:1}.social-links{display:none;list-style-type:none;cursor:default;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}.social-links .e-social-link{color:#000;font-size:1.1em}.social-links .e-social-link .fa,.social-links .e-social-link .fab,.social-links .e-social-link .fas{padding-right:.5rem}.social-links .e-social-link:hover span{text-decoration:underline}.cv-links{color:#096494!important;display:inline-block;position:relative;font-size:1.5rem;margin-left:5.5rem}.cv-links i{text-decoration:underline}.cv-links i::before{margin-right:.5rem}@media (min-width:66.67em){.side-card{padding-right:0}}@media (min-width:34em){.side-card{width:15.25424%;min-width:165px;float:left;margin-right:1.69492%;opacity:.75;-webkit-transition:opacity .2s ease-in-out;transition:opacity .2s ease-in-out}.side-card .card-wrap{padding:10px 10px 10px 17px}.sticky{clear:both;position:-webkit-sticky;position:sticky;top:2em}.sticky>*{display:block}.author-avatar{display:block;width:auto;height:auto;text-align:center}.author-avatar img{padding:5px;border:1px solid #f2f3f3}.author-discrip{display:block;width:100%;padding-left:0;padding-right:0;color:#000}.author-discrip .author-bio{font-size:1.4rem;margin-top:8px;margin-bottom:10px}.author-links{display:block}.social-icons{display:block;visibility:visible;opacity:1;position:relative;width:auto;margin:0;padding:0;border:0;background:0 0;box-shadow:none}.social-icons::before{content:none}.m-social-links{display:none}.social-links{display:block;margin-top:.8rem;margin-bottom:1.6rem;padding:0}.cv-links{margin:0}}#page_footer{clear:both;height:100px;width:100%;float:left;margin-left:0;margin-right:0;color:#9ba1a6;-webkit-animation:intro .3s both;animation:intro .3s both;-webkit-animation-delay:.45s;animation-delay:.45s;border-top:1px solid #bdc1c4}#page_footer a{color:#9ba1a6;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}#page_footer a:hover{color:#000}.footer_wrap{max-width:600px;margin-left:auto;margin-right:auto;clear:both;margin-top:1em;padding-left:2.5em;font-size:1.3rem;display:table}.footer_wrap .footer_info{display:table-cell;vertical-align:middle;padding-left:1em;width:500px}.footer_wrap .footer_qrcode{display:table-cell;vertical-align:middle;height:100px;width:100px}@media (min-width:66.67em){.footer_wrap{max-width:1200px}.footer_wrap .footer_info{width:1100px}}@media (min-width:34em){.footer_wrap{padding:0 1em 2em}}.nav-wrap{position:fixed;bottom:220px;right:0;max-width:50px;visibility:hidden;opacity:0;transition:all .3s;-webkit-transition:all .3s;-moz-transition:all .3s}.nav-wrap.is-visible{visibility:visible;opacity:1;pointer-events:auto}.nav{height:30px;width:30px}.site-nav{position:absolute;height:30px;width:30px;background-color:#7a8288;color:#fff;cursor:pointer;padding:0 .3rem;border-width:0;border-style:initial;border-color:initial;border-image:initial;outline:0}.navicon{position:relative;width:18px;height:3px;background:#fff;margin:auto;transition:all .3s ease 0s}.navicon::before{content:"";position:absolute;top:-8px;left:0;width:18px;height:3px;background:#fff;transition:all .3s ease 0s}.navicon::after{content:"";position:absolute;bottom:-8px;left:0;width:18px;height:3px;background:#fff;transition:all .3s ease 0s}.nav-open .navicon{background:0 0}.nav-open .navicon::before{transform-origin:50% 50%;top:0;left:-3px;width:25px;transform:rotate3d(0,0,1,45deg)}.nav-open .navicon::after{transform-origin:50% 50%;top:0;left:-3px;width:25px;transform:rotate3d(0,0,1,-45deg)}.nav_items{visibility:hidden;opacity:0;position:absolute;right:45px;top:-20px;margin:0;box-shadow:rgba(0,0,0,.25) 0 0 10px;padding:5px;border-width:1px;border-style:solid;border-color:#f2f3f3;border-image:initial;border-radius:4px;background:#fff;list-style:none;transition:all ease-in-out .2s}.nav_items li{display:block;border-bottom:1px solid #f2f3f3}.nav_items li a{display:block;color:#7a8288;font-size:1.6rem;margin:0;padding:10px 20px;text-decoration:none;transition:all .2s ease-in-out 0s}.nav_items li a:hover{color:#5c6266;background:#dee0e1}.nav_items::before{content:"";position:absolute;top:20px;right:-10px;width:0;display:block;z-index:0;border-style:solid;border-width:10px 0 10px 10px;border-color:transparent transparent transparent #fff}.nav_items::after{clear:both;content:"";display:table}.nav-open .nav_items{visibility:visible;opacity:1}.cd-top{display:block;width:auto;height:auto}.cd-top i{display:block;margin-top:3px;width:30px;height:30px;background-color:#7a8288;color:#fff;text-align:center;text-decoration:none;font-size:16px;line-height:29px;cursor:pointer}::-webkit-scrollbar{width:12px;height:8px;background-color:#fff}::-webkit-scrollbar-track{background-color:#fff}::-webkit-scrollbar-thumb{background-color:rgba(122,130,136,.4)}</style>
+  <style data-src="/css/custom.css">:root{--accent:#0f5b67;--accent-hover:#0a4651;--accent-soft:#eaf3f4;--accent-strong:#073640;--urgent:#a61e2c;--urgent-soft:#fdf2f3;--text:#1a1f2e;--text-muted:#4a5363;--text-subtle:#8a93a3;--border:#e3e6ea;--border-soft:#eef0f3;--surface:#ffffff;--surface-alt:#f7f8fa;--surface-muted:#fafbfc;--shadow-sm:0 1px 2px rgba(15,23,42,0.04),0 1px 3px rgba(15,23,42,0.04);--shadow-md:0 4px 14px rgba(15,23,42,0.06);--shadow-lg:0 14px 36px rgba(15,23,42,0.09);--radius-sm:6px;--radius-md:10px;--radius-lg:14px;--transition:0.2s cubic-bezier(0.4,0,0.2,1);}body,.page,.side-card{color:var(--text);}.page p,.page li{color:var(--text);}::selection{background:var(--accent-soft);color:var(--accent-strong);}*:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}h3>a{text-decoration:none;}.page article>h3{font-size:2.2rem;font-weight:700;letter-spacing:-0.01em;color:var(--text);margin:2.6rem 0 1.1rem;padding-bottom:0.55rem;border-bottom:1px solid var(--border);position:relative;}.page article>h3::after{content:"";position:absolute;left:0;bottom:-1px;width:2.4rem;height:2px;background:var(--accent);}.page article>h3 a,.page article>h3 a:hover{color:inherit;text-decoration:none;}.bio-intro{margin:0 0 1.25rem;padding:1.6rem 1.8rem;border-radius:var(--radius-lg);background:var(--surface);border:1px solid var(--border-soft);box-shadow:var(--shadow-md);}.bio-name{font-size:2.4rem;font-weight:700;line-height:1.2;letter-spacing:-0.015em;color:var(--text);margin:0 0 0.45rem;}.bio-meta{display:flex;flex-wrap:wrap;align-items:center;gap:0.5rem;font-size:1.5rem;color:var(--text-muted);margin:0 0 1rem;}.bio-role{color:var(--accent);font-weight:600;}.bio-sep{color:var(--text-subtle);}.bio-links{display:flex;flex-wrap:wrap;gap:0.5rem;}.bio-link{border:1px solid var(--border);color:var(--text);background:var(--surface);border-radius:999px;padding:0.3em 0.8em;transition:background var(--transition),border-color var(--transition),color var(--transition),transform var(--transition);}.bio-link:hover{border-color:var(--accent);background:var(--accent-soft);color:var(--accent);transform:translateY(-1px);}.page p.job-highlight{margin:1.25rem 0 0;padding:0.95rem 1.2rem 0.95rem 1.1rem;background:var(--urgent-soft);border-left:3px solid var(--urgent);border-radius:var(--radius-md);color:var(--urgent);font-size:1.5rem;line-height:1.55;}.page p.job-highlight strong{color:var(--urgent);font-weight:600;}.job-highlight .job-contact-icon{color:inherit;text-decoration:none;margin-left:0.4em;transition:opacity var(--transition);}.job-highlight .job-contact-icon:hover{opacity:0.7;}.side-card .author-discrip{text-align:center;}.side-card .author-discrip h3{font-size:1.7rem;font-weight:700;margin:0.6rem 0 0.2rem;color:var(--text);letter-spacing:-0.005em;}.side-card .author-bio{color:var(--text-muted);font-size:1.25rem;margin:0 0 0.6rem;font-style:italic;}.author-avatar picture,.publication-image picture{display:block;}.timeline-logo picture{display:contents;}.side-card .cv-links{display:inline-flex !important;align-items:center;gap:0.35rem;margin:14px auto 0 !important;padding:0;background:transparent !important;color:var(--accent) !important;font-weight:600;font-size:1.4rem;text-decoration:none !important;border:none !important;box-shadow:none !important;transition:color var(--transition);}.side-card .cv-links:hover{color:var(--accent-hover) !important;background:transparent !important;}.side-card .cv-links i{font-style:normal;color:var(--accent) !important;margin-right:0;}.side-card .cv-links i span{font-style:normal;text-decoration:none !important;color:var(--accent) !important;}.side-card .cv-links:hover i,.side-card .cv-links:hover i span{color:var(--accent-hover) !important;}.side-card .card-wrap{text-align:center;}@media (max-width:34em){.side-card .card-wrap{padding-left:0;display:flex;justify-content:center;}.side-card .author-discrip,.side-card .author-links,.side-card .cv-links{display:none !important;}.side-card .author-avatar{display:block;width:96px;height:96px;}.side-card .author-avatar img{width:100% !important;height:100% !important;object-fit:cover;aspect-ratio:1 / 1;}.author-links .social-icons img.social-icon-img{width:1.28571em;height:1.28571em;display:inline-block;vertical-align:middle;}}@media (min-width:34em){.author-links .social-icons{display:grid;grid-template-columns:repeat(4,1fr);justify-items:center;justify-content:center;gap:6px 8px;width:min(140px,100%);margin:0 auto;padding:0;}.author-links .social-icons li{display:block;margin:0;}.author-links .social-icons a{display:flex;align-items:center;justify-content:center;width:30px;height:30px;color:var(--text);border-radius:8px;transition:background var(--transition),color var(--transition),transform var(--transition);}.author-links .social-icons a:hover{color:var(--accent);background:var(--accent-soft);transform:translateY(-2px);}.author-links .social-icons img.social-icon-img{width:1.28571em;height:1.28571em;display:block;}.author-links .social-icons a:hover img.social-icon-img{filter:brightness(0) saturate(100%) invert(28%) sepia(42%) saturate(1100%) hue-rotate(145deg) brightness(85%) contrast(95%);}}.badge{display:inline-flex;align-items:center;padding:0.32em 0.75em;font-size:75%;font-weight:600;line-height:1.2;letter-spacing:0.01em;white-space:nowrap;vertical-align:baseline;border-radius:999px;margin-right:0;text-decoration:none;background-color:transparent;border:1px solid var(--border);color:var(--text);transition:background var(--transition),border-color var(--transition),color var(--transition),transform var(--transition),box-shadow var(--transition);}.badge i{margin-right:0.35em;font-size:0.95em;}.badge:hover{transform:translateY(-1px);}.badge-paper{color:var(--text-muted);background:var(--surface);}.badge-paper:hover{border-color:var(--text-muted);background:var(--surface-alt);color:var(--text);}.badge-code{border-color:#d0d7de;color:#1f2328;background:#f6f8fa;}.badge-code:hover{background:#1f2328;color:#fff;border-color:#1f2328;}.badge-project{border-color:var(--accent);color:var(--accent);background:var(--accent-soft);}.badge-project:hover{background:var(--accent);color:#fff;}.badge-demo{border-color:#c89400;color:#7a5a00;background:#fff7df;}.badge-demo:hover{background:#b08200;color:#fff;border-color:#b08200;}.badge-conference{border-color:#4a8a93;background:#4a8a93;color:#fff;letter-spacing:0.02em;}.badge-conference:hover{background:var(--accent);border-color:var(--accent);}.publication-list{display:flex;flex-direction:column;gap:1.4rem;}.publication-group{display:flex;flex-direction:column;gap:1.4rem;}.publication-group + .publication-group{margin-top:1.6rem;}.publication-group-heading{display:inline-flex;align-items:center;align-self:flex-start;font-size:1.25rem;font-weight:700;letter-spacing:0.08em;color:var(--accent);padding:0.25rem 0 0.25rem 0.9rem;margin:0 0 0.3rem;border-left:3px solid var(--accent);}.publication-block{display:flex;gap:20px;background:var(--surface);border-radius:var(--radius-md);padding:1.4rem;box-shadow:var(--shadow-sm);border:1px solid var(--border-soft);transition:transform var(--transition),box-shadow var(--transition),border-color var(--transition);content-visibility:auto;contain-intrinsic-size:360px 220px;position:relative;}.publication-block:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);border-color:var(--border);}.publication-block.representative-work{background:linear-gradient(180deg,#fbfdfd 0%,#f5f9fa 100%);border:1px solid #d8e2e4;box-shadow:0 4px 16px rgba(15,91,103,0.07);overflow:hidden;}.publication-block.representative-work::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--accent),var(--accent-hover));}.publication-block.representative-work:hover{box-shadow:0 10px 28px rgba(15,91,103,0.13);}.publication-title{font-size:1.7rem;font-weight:600;margin-bottom:0.5rem;line-height:1.4;color:var(--text);letter-spacing:-0.005em;}.publication-authors{font-size:1.45rem;margin-bottom:0.7rem;line-height:1.55;color:var(--text-muted);}.publication-links{margin-top:0.7rem;display:flex;flex-wrap:wrap;gap:0.5rem;}.highlight-name{font-weight:700;color:var(--accent);}.publication-image{flex-shrink:0;width:240px;height:135px;border-radius:var(--radius-sm);overflow:hidden;background:var(--surface-alt);display:flex;align-items:center;justify-content:center;}.publication-image picture{width:100%;height:100%;}.publication-image img{width:100%;height:100%;object-fit:contain;transition:transform 0.4s cubic-bezier(0.4,0,0.2,1);}.publication-block:hover .publication-image img{transform:scale(1.04);}.publication-content{flex:1;min-width:0;}.publication-title .citation-tag{display:inline-block !important;font-size:0.6em !important;font-weight:600 !important;color:var(--accent) !important;background:var(--accent-soft) !important;border:1px solid rgba(15,91,103,0.22) !important;padding:0.1em 0.65em !important;border-radius:999px !important;margin-left:0.55em !important;vertical-align:middle !important;line-height:1.6 !important;white-space:nowrap !important;}.full-list-link{display:inline-block;margin-left:0.6em;vertical-align:middle;font-size:1.15rem;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);border:1px solid rgba(15,91,103,0.22);padding:0.28em 0.85em;border-radius:999px;text-decoration:none;transition:background var(--transition),color var(--transition),transform var(--transition);}.full-list-link i{margin-left:0.4em;font-size:0.9em;transition:transform var(--transition);}.full-list-link:hover{background:var(--accent);color:#fff;}.full-list-link:hover i{transform:translateX(3px);}@media (max-width:768px){.publication-block{flex-direction:column;}.publication-image{width:100%;height:auto;padding-bottom:56.25%;position:relative;}.publication-image img{position:absolute;top:0;left:0;object-fit:contain;}.publication-block.representative-work::after{top:8px;right:8px;}}.timeline{position:relative;max-width:100%;margin:1.4rem 0;}.timeline-item{position:relative;margin-bottom:1.5rem;display:flex;align-items:stretch;content-visibility:auto;contain-intrinsic-size:96px 96px;}.timeline::before{content:"";position:absolute;width:2px;background:var(--border);top:0.5rem;bottom:0.5rem;left:2.5rem;z-index:0;}.timeline-logo{width:5rem;height:5rem;border-radius:var(--radius-md);overflow:hidden;background-color:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow-sm);z-index:1;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:transform var(--transition),box-shadow var(--transition),border-color var(--transition);}.timeline-item:hover .timeline-logo{border-color:var(--accent);box-shadow:0 4px 14px rgba(15,91,103,0.16);transform:scale(1.04);}.timeline-logo img{max-width:80%;max-height:80%;object-fit:contain;}.timeline-content{background-color:var(--surface);border-radius:var(--radius-md);padding:1.1rem 1.5rem;box-shadow:var(--shadow-sm);border:1px solid var(--border-soft);transition:transform var(--transition),box-shadow var(--transition),border-color var(--transition);position:relative;overflow:hidden;margin-left:1.4rem;flex:1;}.timeline-content:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);border-color:var(--border);}.timeline-date{display:inline-block;font-size:1.1rem;font-weight:700;color:var(--accent);background:var(--accent-soft);padding:0.22em 0.75em;border-radius:999px;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:0.55rem;}.timeline-title{font-size:1.65rem;font-weight:600;margin-bottom:0.25rem;color:var(--text);line-height:1.4;letter-spacing:-0.005em;}.timeline-description{font-size:1.4rem !important;color:var(--text-muted);line-height:1.6;margin:0;}.page p a:not(.badge):not(.job-contact-icon):not(.bio-link),.page li a:not(.badge){color:var(--accent);text-decoration:none;background-image:linear-gradient(currentColor,currentColor);background-size:0 1px;background-repeat:no-repeat;background-position:0 100%;transition:background-size var(--transition);}.page p a:not(.badge):not(.job-contact-icon):not(.bio-link):hover,.page li a:not(.badge):hover{background-size:100% 1px;}.cd-top{color:var(--accent);}.cd-top:hover{color:var(--accent-hover);}.news-container{position:relative;}.news-slider{max-height:210px;overflow-y:auto;padding-right:10px;scroll-behavior:smooth;scrollbar-width:none;-ms-overflow-style:none;}.news-slider::-webkit-scrollbar{width:0;height:0;}.news-slider:hover::-webkit-scrollbar{width:6px;}.news-slider:hover::-webkit-scrollbar-track{background:transparent;}.news-slider:hover::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px;}.news-slider:hover::-webkit-scrollbar-thumb:hover{background:var(--text-subtle);}.scroll-indicator{text-align:center;padding:5px 0;font-size:0.85rem;color:var(--text-subtle);font-style:italic;}.header_wrap{position:relative;}.view-3d{position:absolute;top:50%;right:2rem;transform:translateY(-50%);display:inline-flex;align-items:center;gap:0.6rem;height:3.4rem;padding:0 1.3rem 0 1rem;color:var(--accent);background:var(--accent-soft);border:1px solid rgba(15,91,103,0.22);border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:1.4rem;font-weight:700;letter-spacing:0.04em;line-height:1;text-decoration:none;transition:background 0.2s ease,color 0.2s ease,border-color 0.2s ease,box-shadow 0.2s ease;}.view-3d span{font-family:inherit;}.view-3d-icon{width:1.7rem;height:1.7rem;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round;transition:transform 0.35s ease;}.view-3d:hover,.view-3d:focus-visible{color:#fff;background:var(--accent);border-color:var(--accent);box-shadow:var(--shadow-md);outline:none;}.view-3d:hover .view-3d-icon{transform:rotate(-18deg) scale(1.08);}@media (max-width:34em){.view-3d{top:2.2rem;right:7.2rem;transform:none;height:3rem;padding:0 1rem 0 0.8rem;font-size:1.3rem;}}</style>
+  <style data-src="/css/fontawesome-subset.css">.fa,.fas,.fa-solid,.fab,.fa-brands{font-style:normal;}.fa::before,.fas::before,.fa-solid::before,.fab::before,.fa-brands::before{content:"";display:inline-block;width:1em;height:1em;vertical-align:-0.125em;background-color:currentColor;-webkit-mask:var(--fa-svg) center / contain no-repeat;mask:var(--fa-svg) center / contain no-repeat;}.fa-envelope{--fa-svg:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M48%2064C21.5%2064%200%2085.5%200%20112c0%2015.1%207.1%2029.3%2019.2%2038.4L236.8%20313.6c11.4%208.5%2027%208.5%2038.4%200L492.8%20150.4c12.1-9.1%2019.2-23.3%2019.2-38.4c0-26.5-21.5-48-48-48H48zM0%20176V384c0%2035.3%2028.7%2064%2064%2064H448c35.3%200%2064-28.7%2064-64V176L294.4%20339.2c-22.8%2017.1-54%2017.1-76.8%200L0%20176z%22%2F%3E%3C%2Fsvg%3E");}.fa-graduation-cap{--fa-svg:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20512%22%3E%3Cpath%20d%3D%22M320%2032c-8.1%200-16.1%201.4-23.7%204.1L15.8%20137.4C6.3%20140.9%200%20149.9%200%20160s6.3%2019.1%2015.8%2022.6l57.9%2020.9C57.3%20229.3%2048%20259.8%2048%20291.9v28.1c0%2028.4-10.8%2057.7-22.3%2080.8c-6.5%2013-13.9%2025.8-22.5%2037.6C0%20442.7-.9%20448.3%20.9%20453.4s6%208.9%2011.2%2010.2l64%2016c4.2%201.1%208.7%20.3%2012.4-2s6.3-6.1%207.1-10.4c8.6-42.8%204.3-81.2-2.1-108.7C90.3%20344.3%2086%20329.8%2080%20316.5V291.9c0-30.2%2010.2-58.7%2027.9-81.5c12.9-15.5%2029.6-28%2049.2-35.7l157-61.7c8.2-3.2%2017.5%20.8%2020.7%209s-.8%2017.5-9%2020.7l-157%2061.7c-12.4%204.9-23.3%2012.4-32.2%2021.6l159.6%2057.6c7.6%202.7%2015.6%204.1%2023.7%204.1s16.1-1.4%2023.7-4.1L624.2%20182.6c9.5-3.4%2015.8-12.5%2015.8-22.6s-6.3-19.1-15.8-22.6L343.7%2036.1C336.1%2033.4%20328.1%2032%20320%2032zM128%20408c0%2035.3%2086%2072%20192%2072s192-36.7%20192-72L496.7%20262.6%20354.5%20314c-11.1%204-22.8%206-34.5%206s-23.5-2-34.5-6L143.3%20262.6%20128%20408z%22%2F%3E%3C%2Fsvg%3E");}.fa-file-pdf{--fa-svg:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M0%2064C0%2028.7%2028.7%200%2064%200H224V128c0%2017.7%2014.3%2032%2032%2032H384V304H176c-35.3%200-64%2028.7-64%2064V512H64c-35.3%200-64-28.7-64-64V64zm384%2064H256V0L384%20128zM176%20352h32c30.9%200%2056%2025.1%2056%2056s-25.1%2056-56%2056H192v32c0%208.8-7.2%2016-16%2016s-16-7.2-16-16V448%20368c0-8.8%207.2-16%2016-16zm32%2080c13.3%200%2024-10.7%2024-24s-10.7-24-24-24H192v48h16zm96-80h32c26.5%200%2048%2021.5%2048%2048v64c0%2026.5-21.5%2048-48%2048H304c-8.8%200-16-7.2-16-16V368c0-8.8%207.2-16%2016-16zm32%20128c8.8%200%2016-7.2%2016-16V400c0-8.8-7.2-16-16-16H320v96h16zm80-112c0-8.8%207.2-16%2016-16h48c8.8%200%2016%207.2%2016%2016s-7.2%2016-16%2016H448v32h32c8.8%200%2016%207.2%2016%2016s-7.2%2016-16%2016H448v48c0%208.8-7.2%2016-16%2016s-16-7.2-16-16V432%20368z%22%2F%3E%3C%2Fsvg%3E");}.fa-arrow-right{--fa-svg:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20448%20512%22%3E%3Cpath%20d%3D%22M438.6%20278.6c12.5-12.5%2012.5-32.8%200-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3%200s-12.5%2032.8%200%2045.3L338.8%20224%2032%20224c-17.7%200-32%2014.3-32%2032s14.3%2032%2032%2032l306.7%200L233.4%20393.4c-12.5%2012.5-12.5%2032.8%200%2045.3s32.8%2012.5%2045.3%200l160-160z%22%2F%3E%3C%2Fsvg%3E");}.fa-globe{--fa-svg:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M352%20256c0%2022.2-1.2%2043.6-3.3%2064H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6%203.3-64H348.7c2.2%2020.4%203.3%2041.8%203.3%2064zm28.8-64H503.9c5.3%2020.5%208.1%2041.9%208.1%2064s-2.8%2043.5-8.1%2064H380.8c2.1-20.6%203.2-42%203.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3%2020.7%20142%2077.5%20171.9%20151.6zm-149.1%200H167.7c6.1-36.4%2015.5-68.6%2027-94.7c10.5-23.6%2022.2-40.7%2033.5-51.5C239.4%203.2%20248.7%200%20256%200s16.6%203.2%2027.8%2013.8c11.3%2010.8%2023%2027.9%2033.5%2051.5c11.6%2026%2020.9%2058.2%2027%2094.7zm-209%200H18.6C48.6%2085.9%20112.2%2029.1%20190.6%208.4C165.1%2042.6%20145.3%2096.1%20135.3%20160zM8.1%20192H131.2c-2.1%2020.6-3.2%2042-3.2%2064s1.1%2043.4%203.2%2064H8.1C2.8%20299.5%200%20278.1%200%20256s2.8-43.5%208.1-64zM194.7%20446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1%2036.4-15.5%2068.6-27%2094.6c-10.5%2023.6-22.2%2040.7-33.5%2051.5C272.6%20508.8%20263.3%20512%20256%20512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3%20352c10%2063.9%2029.8%20117.4%2055.3%20151.6C112.2%20482.9%2048.6%20426.1%2018.6%20352H135.3zm358.1%200c-30%2074.1-93.6%20130.9-171.9%20151.6c25.5-34.2%2045.2-87.7%2055.3-151.6H493.4z%22%2F%3E%3C%2Fsvg%3E");}.fa-file-alt{--fa-svg:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20384%20512%22%3E%3Cpath%20d%3D%22M64%200C28.7%200%200%2028.7%200%2064V448c0%2035.3%2028.7%2064%2064%2064H320c35.3%200%2064-28.7%2064-64V160H256c-17.7%200-32-14.3-32-32V0H64zM256%200V128H384L256%200zM112%20256H272c8.8%200%2016%207.2%2016%2016s-7.2%2016-16%2016H112c-8.8%200-16-7.2-16-16s7.2-16%2016-16zm0%2064H272c8.8%200%2016%207.2%2016%2016s-7.2%2016-16%2016H112c-8.8%200-16-7.2-16-16s7.2-16%2016-16zm0%2064H272c8.8%200%2016%207.2%2016%2016s-7.2%2016-16%2016H112c-8.8%200-16-7.2-16-16s7.2-16%2016-16z%22%2F%3E%3C%2Fsvg%3E");}.fa-play{--fa-svg:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20384%20512%22%3E%3Cpath%20d%3D%22M73%2039c-14.8-9.1-33.4-9.4-48.5-.9S0%2062.6%200%2080V432c0%2017.4%209.4%2033.4%2024.5%2041.9s33.7%208.1%2048.5-.9L361%20297c14.3-8.7%2023-24.2%2023-41s-8.7-32.2-23-41L73%2039z%22%2F%3E%3C%2Fsvg%3E");}.fa-cube{--fa-svg:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M234.5%205.7c13.9-5%2029.1-5%2043.1%200l192%2068.6C495%2083.4%20512%20107.5%20512%20134.6V377.4c0%2027-17%2051.2-42.5%2060.3l-192%2068.6c-13.9%205-29.1%205-43.1%200l-192-68.6C17%20428.6%200%20404.5%200%20377.4V134.6c0-27%2017-51.2%2042.5-60.3l192-68.6zM256%2066L82.3%20128%20256%20190l173.7-62L256%2066zm32%20368.6l160-57.1v-188L288%20246.6v188z%22%2F%3E%3C%2Fsvg%3E");}.fa-arrow-up{--fa-svg:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20384%20512%22%3E%3Cpath%20d%3D%22M214.6%2041.4c-12.5-12.5-32.8-12.5-45.3%200l-160%20160c-12.5%2012.5-12.5%2032.8%200%2045.3s32.8%2012.5%2045.3%200L160%20141.2V448c0%2017.7%2014.3%2032%2032%2032s32-14.3%2032-32V141.2L329.4%20246.6c12.5%2012.5%2032.8%2012.5%2045.3%200s12.5-32.8%200-45.3l-160-160z%22%2F%3E%3C%2Fsvg%3E");}.fa-github{--fa-svg:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20496%20512%22%3E%3Cpath%20d%3D%22M165.9%20397.4c0%202-2.3%203.6-5.2%203.6-3.3.3-5.6-1.3-5.6-3.6%200-2%202.3-3.6%205.2-3.6%203-.3%205.6%201.3%205.6%203.6zm-31.1-4.5c-.7%202%201.3%204.3%204.3%204.9%202.6%201%205.6%200%206.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2%202.3zm44.2-1.7c-2.9.7-4.9%202.6-4.6%204.9.3%202%202.9%203.3%205.9%202.6%202.9-.7%204.9-2.6%204.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8%208C106.1%208%200%20113.3%200%20252c0%20110.9%2069.8%20205.8%20169.5%20239.2%2012.8%202.3%2017.3-5.6%2017.3-12.1%200-6.2-.3-40.4-.3-61.4%200%200-70%2015-84.7-29.8%200%200-11.4-29.1-27.8-36.6%200%200-22.9-15.7%201.6-15.4%200%200%2024.9%202%2038.6%2025.8%2021.9%2038.6%2058.6%2027.5%2072.9%2020.9%202.3-16%208.8-27.1%2016-33.7-55.9-6.2-112.3-14.3-112.3-110.5%200-27.5%207.6-41.3%2023.6-58.9-2.6-6.5-11.1-33.3%202.6-67.9%2020.9-6.5%2069%2027%2069%2027%2020-5.6%2041.5-8.5%2062.8-8.5s42.8%202.9%2062.8%208.5c0%200%2048.1-33.6%2069-27%2013.7%2034.7%205.2%2061.4%202.6%2067.9%2016%2017.7%2025.8%2031.5%2025.8%2058.9%200%2096.5-58.9%20104.2-114.8%20110.5%209.2%207.9%2017%2022.9%2017%2046.4%200%2033.7-.3%2075.4-.3%2083.6%200%206.5%204.6%2014.4%2017.3%2012.1C428.2%20457.8%20496%20362.9%20496%20252%20496%20113.3%20383.5%208%20244.8%208zM97.2%20352.9c-1.3%201-1%203.3.7%205.2%201.6%201.6%203.9%202.3%205.2%201%201.3-1%201-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7%201.3.3%202.9%202.3%203.9%201.6%201%203.6.7%204.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4%2035.6c-1.6%201.3-1%204.3%201.3%206.2%202.3%202.3%205.2%202.6%206.5%201%201.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6%201-1.6%203.6%200%205.9%201.6%202.3%204.3%203.3%205.6%202.3%201.6-1.3%201.6-3.9%200-6.2-1.4-2.3-4-3.3-5.6-2z%22%2F%3E%3C%2Fsvg%3E");}.fa-weixin{--fa-svg:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20576%20512%22%3E%3Cpath%20d%3D%22M385.2%20167.6c6.4%200%2012.6.3%2018.8%201.1C387.4%2090.3%20303.3%2032%20207.7%2032%20100.5%2032%2013%20104.8%2013%20197.4c0%2053.4%2029.3%2097.5%2077.9%20131.6l-19.3%2058.6%2068-34.1c24.4%204.8%2043.8%209.7%2068.2%209.7%206.2%200%2012.1-.3%2018.3-.8-4-12.9-6.2-26.6-6.2-40.8-.1-84.9%2072.9-154%20165.3-154zm-104.5-52.9c14.5%200%2024.2%209.7%2024.2%2024.4%200%2014.5-9.7%2024.2-24.2%2024.2-14.8%200-29.3-9.7-29.3-24.2.1-14.7%2014.6-24.4%2029.3-24.4zm-136.4%2048.6c-14.5%200-29.3-9.7-29.3-24.2%200-14.8%2014.8-24.4%2029.3-24.4%2014.8%200%2024.4%209.7%2024.4%2024.4%200%2014.6-9.6%2024.2-24.4%2024.2zM563%20319.4c0-77.9-77.9-141.3-165.4-141.3-92.7%200-165.4%2063.4-165.4%20141.3S305%20460.7%20397.6%20460.7c19.3%200%2038.9-5.1%2058.6-9.9l53.4%2029.3-14.8-48.6C534%20402.1%20563%20363.2%20563%20319.4zm-219.1-24.5c-9.7%200-19.3-9.7-19.3-19.6%200-9.7%209.7-19.3%2019.3-19.3%2014.8%200%2024.4%209.7%2024.4%2019.3%200%2010-9.7%2019.6-24.4%2019.6zm107.1%200c-9.7%200-19.3-9.7-19.3-19.6%200-9.7%209.7-19.3%2019.3-19.3%2014.5%200%2024.4%209.7%2024.4%2019.3.1%2010-9.9%2019.6-24.4%2019.6z%22%2F%3E%3C%2Fsvg%3E");}.fa-twitter{--fa-svg:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M459.37%20151.716c.325%204.548.325%209.097.325%2013.645%200%20138.72-105.583%20298.558-298.558%20298.558-59.452%200-114.68-17.219-161.137-47.106%208.447.974%2016.568%201.299%2025.34%201.299%2049.055%200%2094.213-16.568%20130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772%206.498.974%2012.995%201.624%2019.818%201.624%209.421%200%2018.843-1.3%2027.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969%207.797%2030.214%2012.67%2047.431%2013.319-28.264-18.843-46.781-51.005-46.781-87.391%200-19.492%205.197-37.36%2014.294-52.954%2051.655%2063.675%20129.3%20105.258%20216.365%20109.807-1.624-7.797-2.599-15.918-2.599-24.04%200-57.828%2046.782-104.934%20104.934-104.934%2030.213%200%2057.502%2012.67%2076.67%2033.137%2023.715-4.548%2046.456-13.32%2066.599-25.34-7.798%2024.366-24.366%2044.833-46.132%2057.827%2021.117-2.273%2041.584-8.122%2060.426-16.243-14.292%2020.791-32.161%2039.308-52.628%2054.253z%22%2F%3E%3C%2Fsvg%3E");}.fa-zhihu{--fa-svg:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20512%22%3E%3Cpath%20d%3D%22M170.54%20148.13v217.54l23.43.01%207.71%2026.37%2042.01-26.37h49.53V148.13H170.54zm97.75%20193.93h-27.94l-27.9%2017.51-5.08-17.47-11.9-.04V171.75h72.82v170.31zm-118.46-94.39H97.5c1.74-27.1%202.2-51.59%202.2-73.46h51.16s1.97-22.56-8.58-22.31h-88.5c3.49-13.12%207.87-26.66%2013.12-40.67%200%200-24.07%200-32.27%2021.57-3.39%208.9-13.21%2043.14-30.7%2078.12%205.89-.64%2025.37-1.18%2036.84-22.21%202.11-5.89%202.51-6.66%205.14-14.53h28.87c0%2010.5-1.2%2066.88-1.68%2073.44H20.83c-11.74%200-15.56%2023.62-15.56%2023.62h65.58C66.45%20321.1%2042.83%20363.12%200%20396.34c20.49%205.85%2040.91-.93%2051-9.9%200%200%2022.98-20.9%2035.59-69.25l53.96%2064.94s7.91-26.89-1.24-39.99c-7.58-8.92-28.06-33.06-36.79-41.81L87.9%20311.95c4.36-13.98%206.99-27.55%207.87-40.67h61.65s-.09-23.62-7.59-23.62v.01zm412.02-1.6c20.83-25.64%2044.98-58.57%2044.98-58.57s-18.65-14.8-27.38-4.06c-6%208.15-36.83%2048.2-36.83%2048.2l19.23%2014.43zm-150.09-59.09c-9.01-8.25-25.91%202.13-25.91%202.13s39.52%2055.04%2041.12%2057.45l19.46-13.73s-25.67-37.61-34.66-45.86h-.01zM640%20258.35c-19.78%200-130.91.93-131.06.93v-101c4.81%200%2012.42-.4%2022.85-1.2%2040.88-2.41%2070.13-4%2087.77-4.81%200%200%2012.22-27.19-.59-33.44-3.07-1.18-23.17%204.58-23.17%204.58s-165.22%2016.49-232.36%2018.05c1.6%208.82%207.62%2017.08%2015.78%2019.55%2013.31%203.48%2022.69%201.7%2049.15.89%2024.83-1.6%2043.68-2.43%2056.51-2.43v99.81H351.41s2.82%2022.31%2025.51%2022.85h107.94v70.92c0%2013.97-11.19%2021.99-24.48%2021.12-14.08.11-26.08-1.15-41.69-1.81%201.99%203.97%206.33%2014.39%2019.31%2021.84%209.88%204.81%2016.17%206.57%2026.02%206.57%2029.56%200%2045.67-17.28%2044.89-45.31v-73.32h122.36c9.68%200%208.7-23.78%208.7-23.78l.03-.01z%22%2F%3E%3C%2Fsvg%3E");}</style>
+  <meta name="generator" content="Hexo 5.4.2">
+</head>
+
+<body>
+  <header id="page_header">
+    <div class="header_wrap">
+      <div id="blog_name"><a class="blog_title" id="site-name" href="/">Jiaming Han</a></div><button class="menus_icon"
+        aria-label="Toggle menu">
+        <div class="navicon"></div>
+      </button>
+      <ul class="menus_items">
+        <li class="menus_item"><a class="site-page" href="/#Biography"> Biography</a></li>
+        <li class="menus_item"><a class="site-page" href="/#Publications"> Publications</a></li>
+        <li class="menus_item"><a class="site-page" href="/#Experience"> Experience</a></li>
+        <li class="menus_item"><a class="site-page" href="/#Activities"> Activities</a></li>
+        <li class="menus_item"><a class="site-page" href="/#Educations"> Educations</a></li>
+      </ul>
+      <a class="view-3d" href="/3D/" title="Step into the 3D version of this page" aria-label="Open the 3D version">
+        <svg class="view-3d-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+          <path d="M12 2.8 20 7.4v9.2L12 21.2 4 16.6V7.4L12 2.8Z" />
+          <path d="M4 7.4 12 12l8-4.6M12 12v9.2" />
+        </svg>
+        <span>3D</span>
+      </a>
+    </div>
+  </header>
+  <main id="page_main">
+    <div class="side-card sticky">
+      <div class="card-wrap" itemscope itemtype="http://schema.org/Person">
+        <div class="author-avatar">
+          <picture>
+            <source srcset="/img/photo.webp" type="image/webp">
+            <img class="avatar-img" src="/img/photo.jpg" data-fallback-src="/img/profile.png" alt="avatar" width="110"
+              height="110" decoding="async" fetchpriority="high">
+          </picture>
+        </div>
+        <div class="author-discrip">
+          <h3>Jiaming Han</h3>
+          <p class="author-bio">be simple, be happy</p>
+        </div>
+        <div class="author-links"><button class="btn m-social-links">Links</button>
+          <ul class="social-icons">
+            <li><a class="social-icon" href="https://github.com/csuhan" target="_blank" rel="noopener"
+                aria-label="Github"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+            <li><a class="social-icon" href="mailto:hanjiaming@link.cuhk.edu.hk" aria-label="Email"><i
+                  class="fas fa-envelope" aria-hidden="true"></i></a></li>
+            <li><a class="social-icon" href="/attaches/wechat_qrcode.png" target="_blank" rel="noopener"
+                aria-label="WeChat"><i class="fab fa-weixin" aria-hidden="true"></i></a></li>
+            <li><a class="social-icon" href="https://twitter.com/csu_han" target="_blank" rel="noopener"
+                aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a class="social-icon" href="https://www.xiaohongshu.com/user/profile/62e01a87000000001f005509"
+                target="_blank" rel="noopener" aria-label="Xiaohongshu">
+                <img class="social-icon-img" src="/img/svg/xiaohongshuzhanghao.svg" alt="Xiaohongshu">
+              </a></li>
+            <li><a class="social-icon" href="https://www.zhihu.com/people/csuhanjiaming" target="_blank" rel="noopener"
+                aria-label="Zhihu"><i class="fab fa-zhihu" aria-hidden="true"></i></a></li>
+            <li><a class="social-icon" href="https://huggingface.co/csuhan" target="_blank" rel="noopener"
+                aria-label="Hugging Face">
+                <img class="social-icon-img" src="/img/svg/line-huggingface.svg" alt="Hugging Face">
+              </a></li>
+            <li><a class="social-icon"
+                href="https://scholar.google.com/citations?hl=en&amp;user=vgcxKEcAAAAJ&amp;view_op=list_works&amp;sortby=pubdate"
+                target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fas fa-graduation-cap"
+                  aria-hidden="true"></i></a></li>
+          </ul>
+        </div><a class="cv-links" href="/attaches/CV_Jiaming-Han.pdf" target="_blank"><i class="fas fa-file-pdf"
+            aria-hidden="true"><span>Curriculum Vitae</span></i></a>
+      </div>
+    </div>
+    <main class="page" itemscope itemtype="http://schema.org/CreativeWork">
+      <article>
+        <section class="bio-intro" aria-label="Profile">
+          <div class="bio-name">Jiaming Han</div>
+          <div class="bio-meta">
+            <span class="bio-role">PhD Student</span>
+            <span class="bio-sep">·</span>
+            <span class="bio-affiliation">MMLab, The Chinese University of Hong Kong</span>
+          </div>
+          <div class="bio-links" aria-label="Links">
+            <a class="badge bio-link" target="_blank" rel="noopener"
+              href="https://scholar.google.com/citations?hl=en&amp;user=vgcxKEcAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">
+              <i class="fas fa-graduation-cap" aria-hidden="true"></i><span id="scholar-cite">Scholar</span>
+            </a>
+            <a class="badge bio-link" target="_blank" rel="noopener" href="https://github.com/csuhan">
+              <i class="fab fa-github" aria-hidden="true"></i>Github
+            </a>
+            <a class="badge bio-link" href="mailto:hanjiaming@link.cuhk.edu.hk">
+              <i class="fas fa-envelope" aria-hidden="true"></i>Email
+            </a>
+            <a class="badge bio-link" target="_blank" rel="noopener" href="/attaches/wechat_qrcode.png">
+              <i class="fab fa-weixin" aria-hidden="true"></i>WeChat
+            </a>
+            <a class="badge bio-link" target="_blank" rel="noopener" href="https://twitter.com/csu_han">
+              <i class="fab fa-twitter" aria-hidden="true"></i>Twitter
+            </a>
+          </div>
+        </section>
+        <h3 id="Biography"><a href="#Biography" class="headerlink" title="Biography"></a><a
+            href="#Biography">Biography</a></h3>
+        <p>I am a third-year PhD student of <a target="_blank" rel="noopener" href="http://mmlab.ie.cuhk.edu.hk/">MMLab</a>@<a
+            target="_blank" rel="noopener" href="https://cuhk.edu.hk/english/index.html">CUHK</a> advised by Prof. <a
+            target="_blank" rel="noopener" href="https://xyue.io/">Xiangyu Yue</a>. Before that, I received my Master and Bachelor degree from Wuhan University and Central South University, respectively. I also interned at <a target="_blank" rel="noopener" href="https://hunyuan.tencent.com/">Tencent Hunyuan</a>, <a
+            target="_blank" rel="noopener" href="https://seed.bytedance.com/en">Bytedance Seed</a>, <a target="_blank"
+            rel="noopener" href="https://www.shlab.org.cn/">Shanghai AI Lab</a> and <a target="_blank" rel="noopener"
+            href="https://open.youtu.qq.com/#/open">Tencent YouTu Lab</a>.</p>
+            <p>My research builds toward a unified intelligent system through <strong>multimodal foundation models</strong>&mdash;from efficient multimodal alignment that binds diverse modalities to language (LLaMA-Adapter, OneLLM), to unifying multimodal understanding and generation within a single autoregressive model (Tar, BitDance), and now toward <strong>world models</strong>, with the long-term goal of building a unified large model that perceives, generates, reasons, and acts in the world.</p>
+              
+            <p class="job-highlight"><strong>I expect to graduate in Summer 2027 and am actively seeking full-time job opportunities. Feel free to contact me via
+                Email<a class="job-contact-icon" href="mailto:hanjiaming@link.cuhk.edu.hk" aria-label="Email"
+                  title="Email: hanjiaming@link.cuhk.edu.hk"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                and Wechat<a class="job-contact-icon" href="/attaches/wechat_qrcode.png" target="_blank" rel="noopener"
+                  aria-label="WeChat" title="WeChat: jiaming-han"><i class="fab fa-weixin" aria-hidden="true"></i></a>.
+              </strong></p>
+
+        <h3 id="Selected-Publications"><a href="#Selected-Publications" class="headerlink"
+            title="Selected Publications"></a><a             href="#Publications">Selected Publications</a><a
+            href="https://scholar.google.com/citations?hl=en&user=vgcxKEcAAAAJ&view_op=list_works"
+            target="_blank" rel="noopener" class="full-list-link">Full List <i class="fas fa-arrow-right"
+              aria-hidden="true"></i></a></h3>
+        <p />
+        <div class="publication-list">
+          <section class="publication-group">
+            <div class="publication-group-heading">Agentic Coding & Reinforcement Learning</div>
+            <div class="publication-block">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/auto_rubric.webp" type="image/webp">
+                  <img src="/img/papers/auto_rubric.webp"
+                    alt="Auto-Rubric as Reward: From Implicit Preferences to Explicit Multimodal Generative Criteria"
+                    width="240" height="135" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">Auto-Rubric as Reward: From Implicit Preferences to Explicit Multimodal
+                  Generative Criteria</div>
+                <div class="publication-authors">
+                  Juanxi Tian, Fengyuan Liu, <span class="highlight-name">Jiaming Han</span>, Yilei Jiang, Yongliang Wu,
+                  Yesheng Liu, Haodong Li, Furong Xu, Wanhua Li
+                </div>
+                <div class="publication-links" data-scholar-id="IWHjjKOFINEC">
+                  <span class="badge badge-conference">NeurIPS 2026</span>
+                  <a target="_blank" rel="noopener" href="https://openenvision.github.io/AutoRubric-as-Reward/"
+                    class="badge badge-project"><i class="fas fa-globe"></i>Project Page</a>
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2605.08354" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/OpenEnvision/AutoRubric-as-Reward"
+                    class="badge badge-code"><i class="fab fa-github"></i>Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="publication-block representative-work">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/opengame.webp" type="image/webp">
+                  <img src="/img/papers/opengame.webp" alt="OpenGame: Open Agentic Coding for Games" width="240"
+                    height="135" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">OpenGame: Open Agentic Coding for Games</div>
+                <div class="publication-authors">
+                  Yilei Jiang, Jinyuan Hu, Qianyin Xiao, Yaozhi Zheng, Ruize Ma, Kaituo Feng,
+                  <span class="highlight-name">Jiaming Han</span>, Tianshuo Peng, Kaixuan Fan, Manyuan Zhang, Xiangyu Yue
+                </div>
+                <div class="publication-links" data-scholar-id="qUcmZB5y_30C">
+                  <a target="_blank" rel="noopener" href="https://www.opengame-project-page.com/"
+                    class="badge badge-project"><i class="fas fa-globe"></i>Project Page</a>
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2604.18394" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/leigest519/OpenGame"
+                    class="badge badge-code"><i class="fab fa-github"></i>Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="publication-block representative-work">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/screencoder.webp" type="image/webp">
+                  <img src="/img/papers/screencoder.webp"
+                    alt="ScreenCoder: Advancing Visual-to-Code Generation for Front-End Automation via Modular Multimodal Agents"
+                    width="240" height="135" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">ScreenCoder: Advancing Visual-to-Code Generation for Front-End Automation
+                  via Modular Multimodal Agents</div>
+                <div class="publication-authors">
+                  Yilei Jiang, Yaozhi Zheng, Yuxuan Wan, <span class="highlight-name">Jiaming Han</span>, Qunzhong Wang,
+                  Michael R. Lyu, Xiangyu Yue
+                </div>
+                <div class="publication-links" data-scholar-id="_kc_bZDykSQC">
+                  <span class="badge badge-conference">EMNLP 2026</span>
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2507.22827" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/leigest519/ScreenCoder"
+                    class="badge badge-code"><i class="fab fa-github"></i>Code</a>
+                  <a target="_blank" rel="noopener" href="https://huggingface.co/spaces/Jimmyzheng-10/ScreenCoder"
+                    class="badge badge-demo"><i class="fas fa-play"></i>Demo</a>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="publication-block">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/lc_erd.webp" type="image/webp">
+                  <img src="/img/papers/lc_erd.webp"
+                    alt="LC-ERD: Mining Latent Logic for Self-Evolving Reasoning via Consistency-Regulated Reward Decomposition"
+                    width="240" height="135" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">LC-ERD: Mining Latent Logic for Self-Evolving Reasoning via
+                  Consistency-Regulated Reward Decomposition</div>
+                <div class="publication-authors">
+                  Yanyu Chen, Jiyue Jiang, Dianzhi Yu, Zheng Wu, Jiahong Liu, <span class="highlight-name">Jiaming
+                    Han</span>, Xiao Guo, Jinhu Qi, Yu Li, Yifei Zhang, Irwin King
+                </div>
+                <div class="publication-links" data-scholar-id="hFOr9nPyWt4C">
+                  <span class="badge badge-conference">KDD 2026</span>
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2605.24005" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/LC-ERD-repo/LC-ERD"
+                    class="badge badge-code"><i class="fab fa-github"></i>Code</a>
+                </div>
+              </div>
+            </div> -->
+          </section>
+
+          <section class="publication-group">
+            <div class="publication-group-heading">Multimodal Generation & Unified Models</div>
+            <div class="publication-block representative-work">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/bitdance.webp" type="image/webp">
+                  <img src="/img/papers/bitdance.png"
+                    alt="BitDance: Scaling Autoregressive Generative Models with Binary Tokens" width="240"
+                    height="135" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">BitDance: Scaling Autoregressive Generative Models with Binary Tokens</div>
+                <div class="publication-authors">
+                  Yuang Ai*, <span class="highlight-name">Jiaming Han</span>*, Shaobin
+                  Zhuang*, Weijia Mao, Xuefeng Hu, Ziyan Yang,
+                  Zhenheng Yang, Huaibo Huang, Xiangyu Yue, Hao Chen
+                </div>
+                <div class="publication-links" data-scholar-id="qxL8FJ1GzNcC">
+                  <span class="badge badge-conference">NeurIPS 2026</span>
+                  <a target="_blank" rel="noopener" href="https://bitdance.csuhan.com/" class="badge badge-project"><i
+                      class="fas fa-globe"></i>Project Page</a>
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2602.14041" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                  <a target="_blank" rel="noopener" href="https://huggingface.co/collections/shallowdream204/bitdance"
+                    class="badge badge-paper"><i class="fas fa-cube"></i>Models</a>
+                  <a target="_blank" rel="noopener" href="https://huggingface.co/spaces/shallowdream204/BitDance-14B-64x"
+                    class="badge badge-demo"><i class="fas fa-play"></i>Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="publication-block">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/bridge.webp" type="image/webp">
+                  <img src="/img/papers/bridge.jpg"
+                    alt="Bridge: Growing Visual Generative Capacity for Pre-Trained MLLMs" width="240" height="135"
+                    loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">Bridge: Growing Visual Generative Capacity for Pre-Trained MLLMs</div>
+                <div class="publication-authors">
+                  Hanyu Wang*, <span class="highlight-name">Jiaming Han</span>*, Ziyan Yang, Qi Zhao, Shanchuan Lin,
+                  Xiangyu Yue, Abhinav Shrivastava, Zhenheng Yang, Hao Chen
+                </div>
+                <div class="publication-links" data-scholar-id="4TOpqqG69KYC">
+                  <span class="badge badge-conference">ICLRw 2026</span>
+                  <a target="_blank" rel="noopener" href="https://hywang66.github.io/bridge/"
+                    class="badge badge-project"><i class="fas fa-globe"></i>Project Page</a>
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2510.01546" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/hywang66/Bridge" class="badge badge-code"><i
+                      class="fab fa-github"></i>Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="publication-block representative-work">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/tar.webp" type="image/webp">
+                  <img src="/img/papers/tar.png"
+                    alt="Vision as a Dialect: Unifying Visual Understanding and Generation via Text-Aligned Representations"
+                    width="240" height="135" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">Vision as a Dialect: Unifying Visual Understanding and Generation via
+                  Text-Aligned Representations</div>
+                <div class="publication-authors">
+                  <span class="highlight-name">Jiaming Han</span>, Hao Chen, Yang Zhao, Hanyu Wang, Qi Zhao, Ziyan Yang,
+                  Hao He, Xiangyu Yue, Lu Jiang
+                </div>
+                <div class="publication-links" data-scholar-id="Zph67rFs4hoC">
+                  <span class="badge badge-conference">NeurlPS 2025</span>
+                  <a target="_blank" rel="noopener" href="https://tar.csuhan.com/" class="badge badge-project"><i
+                      class="fas fa-globe"></i>Project Page</a>
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2506.18898" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/csuhan/Tar" class="badge badge-code"><i
+                      class="fab fa-github"></i>Code</a>
+                  <a target="_blank" rel="noopener"
+                    href="https://huggingface.co/collections/ByteDance-Seed/tar-6864cf0d9fe59a3b91cc4260"
+                    class="badge badge-paper"><i class="fas fa-file-alt"></i>Models</a>
+                  <a target="_blank" rel="noopener" href="https://huggingface.co/spaces/ByteDance-Seed/Tar-7B"
+                    class="badge badge-demo"><i class="fas fa-play"></i>Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="publication-block">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/uniwetok.webp" type="image/webp">
+                  <img src="/img/papers/uniwetok.png"
+                    alt="UniWeTok: An Unified Binary Tokenizer with Codebook Size 2^128 for Unified Multimodal Large Language Model"
+                    width="240" height="135" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">UniWeTok: An Unified Binary Tokenizer with Codebook Size 2<sup>128</sup> for
+                  Unified Multimodal Large Language Model</div>
+                <div class="publication-authors">
+                  Shaobin Zhuang*, Yuang Ai*, <span class="highlight-name">Jiaming Han</span>*, Weijia Mao, Xiaohui Li,
+                  Fangyikang Wang, Xiao Wang, Yan Li, Shanchuan Lin, Kun Xu, Zhenheng Yang, Huaibo Huang, Xiangyu Yue, Hao
+                  Chen, Yali Wang
+                </div>
+                <div class="publication-links" data-scholar-id="aqlVkmm33-oC">
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2602.14178" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                </div>
+              </div>
+            </div>
+            <div class="publication-block">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/bitlm.webp" type="image/webp">
+                  <img src="/img/papers/bitlm.webp"
+                    alt="BitLM: Unlocking Multi-Token Language Generation with Bitwise Continuous Diffusion" width="240"
+                    height="135" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">BitLM: Unlocking Multi-Token Language Generation with Bitwise Continuous
+                  Diffusion</div>
+                <div class="publication-authors">
+                  Shaobin Zhuang, Yuang Ai, <span class="highlight-name">Jiaming Han</span>, Xiaohui Li, Huaibo Huang,
+                  Xiangyu Yue, Xuefeng Hu, Kun Xu, Yali Wang, Hao Chen
+                </div>
+                <div class="publication-links" data-scholar-id="hC7cP41nSMkC">
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2605.11577" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                </div>
+              </div>
+            </div>
+            <div class="publication-block">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/gide.webp" type="image/webp">
+                  <img src="/img/papers/gide.webp"
+                    alt="GIDE: Unlocking Diffusion LLMs for Precise Training-Free Image Editing" width="240" height="135"
+                    loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">GIDE: Unlocking Diffusion LLMs for Precise Training-Free Image Editing
+                </div>
+                <div class="publication-authors">
+                  Zifeng Zhu, <span class="highlight-name">Jiaming Han</span>, Jiaxiang Zhao, Minnan Luo, Xiangyu Yue
+                </div>
+                <div class="publication-links" data-scholar-id="ZeXyd9-uunAC">
+                  <span class="badge badge-conference">ECCV 2026</span>
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2603.21176" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/Zivenzhu/GIDE" class="badge badge-code"><i
+                      class="fab fa-github"></i>Code</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="publication-group">
+            <div class="publication-group-heading">Long Video & RAG & Embodied Reasoning</div>
+            <div class="publication-block representative-work">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/reflect_vlm.webp" type="image/webp">
+                  <img src="/img/papers/reflect_vlm.png"
+                    alt="Reflective Planning: Vision-Language Models for Multi-Stage Long-Horizon Robotic Manipulation"
+                    width="240" height="135" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">Reflective Planning: Vision-Language Models for Multi-Stage Long-Horizon
+                  Robotic Manipulation</div>
+                <div class="publication-authors">
+                  Yunhai Feng, <span class="highlight-name">Jiaming Han</span>, Zhuoran Yang, Xiangyu Yue, Sergey Levine,
+                  Jianlan Luo
+                </div>
+                <div class="publication-links" data-scholar-id="0EnyYjriUFMC">
+                  <span class="badge badge-conference">CoRL 2025</span>
+                  <a target="_blank" rel="noopener" href="https://reflect-vlm.github.io/" class="badge badge-project"><i
+                      class="fas fa-globe"></i>Project Page</a>
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2502.16707" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/yunhaif/reflect-vlm"
+                    class="badge badge-code"><i class="fab fa-github"></i>Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="publication-block">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/rap.webp" type="image/webp">
+                  <img src="/img/papers/rap.png"
+                    alt="Retrieval-Augmented Personalization for Multimodal Large Language Models" width="240"
+                    height="135" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">Retrieval-Augmented Personalization for Multimodal Large Language Models
+                </div>
+                <div class="publication-authors">
+                  Haoran Hao*, <span class="highlight-name">Jiaming Han</span>*, Changsheng Li, Yu-Feng Li, Xiangyu Yue
+                </div>
+                <div class="publication-links" data-scholar-id="hqOjcs7Dif8C">
+                  <span class="badge badge-conference">CVPR 2025</span>
+                  <a target="_blank" rel="noopener" href="https://hoar012.github.io/RAP-Project/"
+                    class="badge badge-project"><i class="fas fa-globe"></i>Project Page</a>
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2410.13360" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/Hoar012/RAP-MLLM" class="badge badge-code"><i
+                      class="fab fa-github"></i>Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="publication-block">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/crosslmm.webp" type="image/webp">
+                  <img src="/img/papers/crosslmm.png"
+                    alt="CrossLMM: Decoupling Long Video Sequences from LMMs via Dual Cross-Attention Mechanisms"
+                    width="240" height="135" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">CrossLMM: Decoupling Long Video Sequences from LMMs via Dual
+                  Cross-Attention Mechanisms</div>
+                <div class="publication-authors">
+                  Shilin Yan, <span class="highlight-name">Jiaming Han</span>, Joey Tsai, Hongwei Xue, Rongyao Fang,
+                  Lingyi Hong, Ziyu Guo, Ray Zhang
+                </div>
+                <div class="publication-links" data-scholar-id="KlAtU1dfN6UC">
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2505.17020" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/shilinyan99/CrossLMM"
+                    class="badge badge-code"><i class="fab fa-github"></i>Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="publication-block">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/tdc.webp" type="image/webp">
+                  <img src="/img/papers/tdc.png" alt="Multimodal Long Video Modeling Based on Temporal Dynamic Context"
+                    width="240" height="135" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">Multimodal Long Video Modeling Based on Temporal Dynamic Context</div>
+                <div class="publication-authors">
+                  Haoran Hao*, <span class="highlight-name">Jiaming Han</span>*, Yiyuan Zhang, Xiangyu Yue
+                </div>
+                <div class="publication-links" data-scholar-id="5nxA0vEk-isC">
+                  <a target="_blank" rel="noopener" href="https://hoar012.github.io/TDC-Project/"
+                    class="badge badge-project"><i class="fas fa-globe"></i>Project Page</a>
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2504.10443" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/Hoar012/TDC-Video"
+                    class="badge badge-code"><i class="fab fa-github"></i>Code</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="publication-group">
+            <div class="publication-group-heading">Multimodal Alignment</div>
+            <div class="publication-block representative-work">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/llama_adapter.webp" type="image/webp">
+                  <img src="/img/papers/llama_adapter.png"
+                    alt="LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention" width="240"
+                    height="135" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init
+                  Attention</div>
+                <div class="publication-authors">
+                  Renrui Zhang*, <span class="highlight-name">Jiaming Han</span>*, Aojun Zhou, Xiangfei Hu, Shilin Yan,
+                  Pan Lu, Hongsheng Li, Peng Gao, Yu Qiao.
+                </div>
+                <div class="publication-links" data-scholar-id="W7OEmFMy1HYC">
+                  <span class="badge badge-conference">ICLR 2024</span>
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2303.16199" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/OpenGVLab/LLaMA-Adapter"
+                    class="badge badge-code"><i class="fab fa-github"></i>Code</a>
+                  <a target="_blank" rel="noopener" href="https://huggingface.co/spaces/csuhan/LLaMA-Adapter"
+                    class="badge badge-demo"><i class="fas fa-play"></i>Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="publication-block">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/llama_adapter_v2.webp" type="image/webp">
+                  <img src="/img/papers/llama_adapter_v2.png"
+                    alt="LLaMA-Adapter V2: Parameter-Efficient Visual Instruction Model" width="240" height="135"
+                    loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">LLaMA-Adapter V2: Parameter-Efficient Visual Instruction Model</div>
+                <div class="publication-authors">
+                  Peng Gao*, <span class="highlight-name">Jiaming Han</span>*, Renrui Zhang*, Ziyi Lin*, Shijie Geng,
+                  Aojun Zhou, Wei Zhang, Pan Lu, Conghui He, Xiangyu Yue, Hongsheng Li, Yu Qiao.
+                </div>
+                <div class="publication-links" data-scholar-id="YsMSGLbcyi4C">
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2304.15010" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/OpenGVLab/LLaMA-Adapter"
+                    class="badge badge-code"><i class="fab fa-github"></i>Code</a>
+                  <a target="_blank" rel="noopener" href="http://llama-adapter.opengvlab.com/" class="badge badge-demo"><i
+                      class="fas fa-play"></i>Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="publication-block representative-work">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/onellm.webp" type="image/webp">
+                  <img src="/img/papers/onellm.png" alt="OneLLM: One Framework to Align All Modalities with Language"
+                    width="240" height="135" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">OneLLM: One Framework to Align All Modalities with Language</div>
+                <div class="publication-authors">
+                  <span class="highlight-name">Jiaming Han</span>, Kaixiong Gong, Yiyuan Zhang, Jiaqi Wang, Kaipeng Zhang,
+                  Dahua Lin, Yu Qiao, Peng Gao, Xiangyu Yue.
+                </div>
+                <div class="publication-links" data-scholar-id="_FxGoFyzp5QC">
+                  <span class="badge badge-conference">CVPR 2024</span>
+                  <a target="_blank" rel="noopener" href="https://onellm.csuhan.com/" class="badge badge-project"><i
+                      class="fas fa-globe"></i>Project Page</a>
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2312.03700" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/csuhan/OneLLM" class="badge badge-code"><i
+                      class="fab fa-github"></i>Code</a>
+                  <a target="_blank" rel="noopener" href="https://huggingface.co/spaces/csuhan/OneLLM"
+                    class="badge badge-demo"><i class="fas fa-play"></i>Demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="publication-block">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/imagebind_llm.webp" type="image/webp">
+                  <img src="/img/papers/imagebind_llm.png" alt="ImageBind-LLM: Multi-modality Instruction Tuning"
+                    width="240" height="135" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">ImageBind-LLM: Multi-modality Instruction Tuning</div>
+                <div class="publication-authors">
+                  <span class="highlight-name">Jiaming Han</span>*, Renrui Zhang*, Wenqi Shao*, Peng Gao*, Peng Xu*, Han
+                  Xiao*,
+                  Kaipeng Zhang, Chris Liu, Song Wen, Ziyu Guo, Xudong Lu, Shuai Ren, Yafei Wen,
+                  Xiaoxin Chen, Xiangyu Yue, Hongsheng Li, Yu Qiao.
+                </div>
+                <div class="publication-links" data-scholar-id="WF5omc3nYNoC">
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2309.03905" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/OpenGVLab/LLaMA-Adapter"
+                    class="badge badge-code"><i class="fab fa-github"></i>Code</a>
+                  <a target="_blank" rel="noopener" href="http://imagebind-llm.opengvlab.com/" class="badge badge-demo"><i
+                      class="fas fa-play"></i>Demo</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="publication-group">
+            <div class="publication-group-heading">Object Detection</div>
+            <div class="publication-block representative-work">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/ReDet.webp" type="image/webp">
+                  <img src="/img/papers/ReDet.png"
+                    alt="ReDet: A Rotation-Equivariant Detector for Aerial Object Detection" width="240" height="135"
+                    loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">ReDet: A Rotation-Equivariant Detector for Aerial Object Detection</div>
+                <div class="publication-authors">
+                  <span class="highlight-name">Jiaming Han</span>, Jian Ding, Nan Xue, Gui-Song Xia.
+                </div>
+                <div class="publication-links" data-scholar-id="u-x6o8ySG0sC">
+                  <span class="badge badge-conference">CVPR 2021</span>
+                  <a target="_blank" rel="noopener" href="https://redet.csuhan.com/" class="badge badge-project"><i
+                      class="fas fa-globe"></i>Project</a>
+                  <a target="_blank" rel="noopener"
+                    href="https://openaccess.thecvf.com/content/CVPR2021/papers/Han_ReDet_A_Rotation-Equivariant_Detector_for_Aerial_Object_Detection_CVPR_2021_paper.pdf"
+                    class="badge badge-paper"><i class="fas fa-file-alt"></i>Paper</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/csuhan/ReDet" class="badge badge-code"><i
+                      class="fab fa-github"></i>Code</a>
+                  <a href="/attaches/redet_poster.pdf" class="badge badge-paper"><i class="fas fa-file-alt"></i>Poster</a>
+                  <a href="/attaches/redet_slide.pdf" class="badge badge-paper"><i class="fas fa-file-alt"></i>Slide</a>
+                </div>
+              </div>
+            </div>
+            <div class="publication-block representative-work">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/s2anet.webp" type="image/webp">
+                  <img src="/img/papers/s2anet.png" alt="Align Deep Features for Oriented Object Detection" width="240"
+                    height="135" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">Align Deep Features for Oriented Object Detection</div>
+                <div class="publication-authors">
+                  <span class="highlight-name">Jiaming Han</span>, Jian Ding, Jie Li, Gui-Song Xia.
+                </div>
+                <div class="publication-links" data-scholar-id="u5HHmVD_uO8C">
+                  <span class="badge badge-conference">TGRS 2021</span>
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2008.09397" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/csuhan/s2anet" class="badge badge-code"><i
+                      class="fab fa-github"></i>Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="publication-block">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/OpenDet.webp" type="image/webp">
+                  <img src="/img/papers/OpenDet.png"
+                    alt="Expanding Low-Density Latent Regions for Open-Set Object Detection" width="240" height="135"
+                    loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">Expanding Low-Density Latent Regions for Open-Set Object Detection</div>
+                <div class="publication-authors">
+                  <span class="highlight-name">Jiaming Han</span>, Yuqiang Ren, Jian Ding, Xingjia Pan, Ke Yan, Gui-Song
+                  Xia.
+                </div>
+                <div class="publication-links" data-scholar-id="UeHWp8X0CEIC">
+                  <span class="badge badge-conference">CVPR 2022</span>
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2203.14911" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/csuhan/opendet2" class="badge badge-code"><i
+                      class="fab fa-github"></i>Code</a>
+                </div>
+              </div>
+            </div>
+            <div class="publication-block">
+              <div class="publication-image">
+                <picture>
+                  <source srcset="/img/papers/VFA.webp" type="image/webp">
+                  <img src="/img/papers/VFA.png" alt="Few-Shot Object Detection via Variational Feature Aggregation"
+                    width="240" height="135" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <div class="publication-content">
+                <div class="publication-title">Few-Shot Object Detection via Variational Feature Aggregation</div>
+                <div class="publication-authors">
+                  <span class="highlight-name">Jiaming Han</span>, Yuqiang Ren, Jian Ding, Ke Yan, Gui-Song Xia.
+                </div>
+                <div class="publication-links" data-scholar-id="Y0pCki6q_DkC">
+                  <span class="badge badge-conference">AAAI 2023</span>
+                  <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2301.13411" class="badge badge-paper"><i
+                      class="fas fa-file-alt"></i>Paper</a>
+                  <a target="_blank" rel="noopener" href="https://github.com/csuhan/VFA" class="badge badge-code"><i
+                      class="fab fa-github"></i>Code</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <h3 id="Experience"><a href="#Experience" class="headerlink" title="Experience"></a><a
+            href="#Experience">Experience</a></h3>
+        <div class="timeline experience-timeline">
+            <div class="timeline-item">
+              <div class="timeline-logo">
+                <img src="/img/hy_logo.png" alt="Tencent Hunyuan" width="50" height="50" loading="lazy"
+                  decoding="async">
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-date">04/2026 - Present</div>
+                <div class="timeline-title">Research Intern · Tencent Hunyuan</div>
+                <p class="timeline-description">
+                  Video World Model with Dr. <a href="https://hengcv.github.io/" target="_blank">Heng Wang</a>
+                </p>
+              </div>
+            </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-logo">
+              <img src="/img/bytedance_logo.webp" alt="Bytedance Seed" width="50" height="50" loading="lazy"
+                decoding="async">
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">06/2024 - 04/2026</div>
+              <div class="timeline-title">Research Intern · Bytedance Seed</div>
+              <p class="timeline-description">
+                Unified MLLM with Dr. <a href="http://www.lujiang.info" target="_blank">Lu Jiang</a> and Dr. <a href="https://haochen-rye.github.io/" target="_blank">Hao Chen</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-logo">
+              <picture>
+                <source srcset="/img/shlab_logo.webp" type="image/webp">
+                <img src="/img/shlab_logo.png" alt="Shanghai AI Lab" width="50" height="50" loading="lazy"
+                  decoding="async">
+              </picture>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">10/2022 - 02/2024</div>
+              <div class="timeline-title">Research Intern · Shanghai AI Lab</div>
+              <p class="timeline-description">
+                Multimodal LLM with Dr. <a href="https://scholar.google.com.hk/citations?user=_go6DPsAAAAJ&hl=zh-CN"
+                  target="_blank">Peng Gao</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-logo">
+              <picture>
+                <source srcset="/img/youtu_logo.webp" type="image/webp">
+                <img src="/img/youtu_logo.png" alt="Tencent YouTu Lab" width="50" height="50" loading="lazy"
+                  decoding="async">
+              </picture>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">05/2021 - 05/2022</div>
+              <div class="timeline-title">Research Intern · Tencent YouTu Lab</div>
+              <p class="timeline-description">
+                Object Detection with Dr. <a href="https://openreview.net/profile?id=~Yuqiang_Ren1"
+                  target="_blank">Yuqiang Ren</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <h3 id="Educations"><a href="#Educations" class="headerlink" title="Educations"></a><a
+            href="#Educations">Educations</a></h3>
+        <div class="timeline education-timeline">
+          <div class="timeline-item">
+            <div class="timeline-logo">
+              <picture>
+                <source srcset="/img/cuhk_logo.webp" type="image/webp">
+                <img src="/img/cuhk_logo.jpg" alt="The Chinese University of Hong Kong" width="50" height="50"
+                  loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">09/2023 - Present</div>
+              <div class="timeline-title">PhD. The Chinese University of Hong Kong</div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-logo">
+              <picture>
+                <source srcset="/img/whu_logo.webp" type="image/webp">
+                <img src="/img/whu_logo.png" alt="Wuhan University" width="50" height="50" loading="lazy"
+                  decoding="async">
+              </picture>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">09/2019 - 06/2022</div>
+              <div class="timeline-title">M.E. Wuhan University</div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-logo">
+              <picture>
+                <source srcset="/img/csu_logo.webp" type="image/webp">
+                <img src="/img/csu_logo.png" alt="Central South University" width="50" height="50" loading="lazy"
+                  decoding="async">
+              </picture>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">09/2015 - 06/2019</div>
+              <div class="timeline-title">B.E. Central South University</div>
+            </div>
+          </div>
+        </div>
+
+        <h3 id="Activities"><a href="#Activities" class="headerlink" title="Activities"></a><a
+            href="#Activities">Activities</a></h3>
+        <ul>
+          <li>Reviewer of CVPR’21-24, ICCV’21-23, NIPS’23, ICLR’24, WACV’22, ECCV’22-24, AAAI’23-24</li>
+          <li>Reviewer of TPAMI, IJCV, TIP, ISPRS, TGRS, TNNLS</li>
+        </ul>
+
+      </article>
+      </div>
+    </main>
+    <div class="nav-wrap">
+      <div class="nav"><button class="site-nav" aria-label="Toggle navigation menu">
+          <div class="navicon"></div>
+        </button>
+        <ul class="nav_items">
+          <li class="nav_item"><a class="nav-page" href="/#Biography"> Biography</a></li>
+          <li class="nav_item"><a class="nav-page" href="/#Publications"> Publications</a></li>
+          <li class="nav_item"><a class="nav-page" href="/#Experience"> Experience</a></li>
+          <li class="nav_item"><a class="nav-page" href="/#Activities"> Activities</a></li>
+          <li class="nav_item"><a class="nav-page" href="/#Educations"> Educations</a></li>
+        </ul>
+      </div>
+      <div class="cd-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
+    </div>
+    <footer id="page_footer">
+      <div class="footer_wrap">
+        <div class="footer_info">
+          <div class="copyright">&copy;2020 - 2025 by Jiaming Han</div>
+          <div class="theme-info">Views: <span id="busuanzi_container_site_pv"><span
+                id="busuanzi_value_site_pv"></span></span>&nbsp;&nbsp;&nbsp;Visitors: <span
+              id="busuanzi_container_site_uv"><span id="busuanzi_value_site_uv"></span></span></div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/gh/csuhan/resume@cdf26b50946d/js/main.min.js" defer crossorigin="anonymous" onerror="var s=document.createElement('script');s.src='/js/main.min.js?v=7026f5ea2f';document.body.appendChild(s)"></script>
+    <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+    <script>
+    (function() {
+      var SCHOLAR_API = "https://csuhan-scholar-api.hf.space/citations?author_id=vgcxKEcAAAAJ";
+      var runFetch = function() { fetchScholar(); };
+      function fetchScholar() {
+      fetch(SCHOLAR_API)
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+          // 1) Update total citations in bio badge
+          var total = data.citation_stats && data.citation_stats.table
+            && data.citation_stats.table[0] && data.citation_stats.table[0].citations
+            && data.citation_stats.table[0].citations.all;
+          if (total) {
+            var el = document.getElementById("scholar-cite");
+            if (el) el.textContent = "Scholar (" + total + " cite)";
+          }
+          // 2) Build a map: scholar_id -> cited_by_value
+          var citeMap = {};
+          if (data.articles) {
+            data.articles.forEach(function(a) {
+              if (a.link) {
+                var m = a.link.match(/citation_for_view=[^:]*:([^&]+)/);
+                if (m) citeMap[m[1]] = a.cited_by_value;
+              }
+            });
+          }
+          // 3) For each publication-links with data-scholar-id, find the sibling title and append citation tag
+          document.querySelectorAll(".publication-links[data-scholar-id]").forEach(function(el) {
+            var sid = el.getAttribute("data-scholar-id");
+            if (citeMap[sid] !== undefined && citeMap[sid] > 0) {
+              var content = el.closest(".publication-content");
+              if (!content) return;
+              var titleEl = content.querySelector(".publication-title");
+              if (!titleEl) return;
+              var tag = document.createElement("span");
+              tag.className = "citation-tag";
+              tag.textContent = "Cite: " + citeMap[sid];
+              titleEl.appendChild(tag);
+            }
+          });
+        })
+        .catch(function() {});
+      }
+      if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(runFetch, { timeout: 2000 });
+      } else {
+        window.addEventListener('load', function() { setTimeout(runFetch, 200); });
+      }
+    })();
+    </script>
+</body>
+
+</html>
