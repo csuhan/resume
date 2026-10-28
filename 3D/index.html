@@ -15,12 +15,63 @@
     />
     <meta property="og:type" content="website" />
     <meta name="color-scheme" content="light" />
-    <link rel="icon" href="/3D/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <title>Room 03 · Jiaming Han's 3D Home</title>
-    <script type="module" crossorigin src="/3D/static/index-gM_1y2bW.js"></script>
-    <link rel="modulepreload" crossorigin href="/3D/static/three-Cfg9fW8M.js">
-    <link rel="stylesheet" crossorigin href="/3D/static/index-Ds1Zq_bZ.css">
-  </head>
+          <script>
+(function () {
+  // three.js comes from public npm CDNs; the app from a CDN mirror of this
+  // folder, with csuhan.com/3D/ as fallback. Each source gets a short head
+  // start; the first to answer is used.
+  var threeCdns = ["https://registry.npmmirror.com/three/0.180.0/files","https://cdn.jsdelivr.net/npm/three@0.180.0","https://unpkg.com/three@0.180.0"];
+  var origins = ["./"];
+  var entry = "static/index-BdFEgbRA.js";
+  var css = "static/index-CqLle_DH.css";
+  var abs = function (o) { return new URL(o, location.href).href; };
+  function probe(urls, ms) {
+    return new Promise(function (resolve) {
+      var i = 0;
+      (function next() {
+        if (i >= urls.length) return resolve(urls[0]);
+        var url = urls[i++];
+        var settled = false;
+        var timer = setTimeout(function () { if (!settled) { settled = true; next(); } }, ms);
+        // a HEAD-sized probe: the browser keeps the connection warm for the real request
+        fetch(url, { method: 'GET', mode: 'cors', cache: 'force-cache' }).then(function (r) {
+          if (settled) return;
+          settled = true;
+          clearTimeout(timer);
+          if (r.ok) resolve(url); else next();
+        }, function () { if (!settled) { settled = true; clearTimeout(timer); next(); } });
+      })();
+    });
+  }
+  var threeFile = '/build/three.module.min.js';
+  var threeP = probe(threeCdns.map(function (c) { return c + threeFile; }), 3000);
+  // probe the app origin with a tiny file so nothing is fetched twice
+  var appP = probe(origins.map(function (o) { return abs(o) + 'favicon.svg'; }), 3000).then(function (u) { return u.slice(0, -'favicon.svg'.length) + css; });
+  appP.then(function (cssUrl) {
+    var l = document.createElement('link');
+    l.rel = 'stylesheet';
+    l.href = cssUrl;
+    document.head.appendChild(l);
+  });
+  Promise.all([threeP, appP]).then(function (r) {
+    var root = r[0].slice(0, -threeFile.length);
+    var appRoot = r[1].slice(0, -css.length);
+    var map = document.createElement('script');
+    map.type = 'importmap';
+    map.textContent = JSON.stringify({ imports: { three: root + threeFile, 'three/addons/': root + '/examples/jsm/' } });
+    document.head.appendChild(map);
+    var s = document.createElement('script');
+    s.type = 'module';
+    s.crossOrigin = 'anonymous';
+    s.src = appRoot + entry;
+    if (appRoot !== abs('./')) s.onerror = function () { s.remove(); var f = document.createElement('script'); f.type = 'module'; f.src = abs('./') + entry; document.head.appendChild(f); };
+    document.head.appendChild(s);
+  });
+})();
+</script>
+</head>
   <body>
     <svg class="svg-sprite" aria-hidden="true">
       <defs>
@@ -297,7 +348,7 @@
           </button>
           <span class="eyebrow">WECHAT</span>
           <h2 id="qrTitle">Scan to connect</h2>
-          <div class="qr-frame"><img src="/3D/assets/wechat_qrcode.png" alt="Jiaming Han WeChat QR code" /></div>
+          <div class="qr-frame"><img src="./assets/wechat_qrcode.png" alt="Jiaming Han WeChat QR code" /></div>
           <p>Or email me directly at<br /><a href="mailto:hanjiaming@link.cuhk.edu.hk">hanjiaming@link.cuhk.edu.hk</a></p>
         </div>
       </div>
@@ -326,7 +377,7 @@
     <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
 
     <noscript>
-      <div class="noscript">This 3D room needs JavaScript. You can still open the <a href="/3D/assets/CV_Jiaming-Han.pdf">CV</a> or email hanjiaming@link.cuhk.edu.hk.</div>
+      <div class="noscript">This 3D room needs JavaScript. You can still open the <a href="./assets/CV_Jiaming-Han.pdf">CV</a> or email hanjiaming@link.cuhk.edu.hk.</div>
     </noscript>
   </body>
 </html>
